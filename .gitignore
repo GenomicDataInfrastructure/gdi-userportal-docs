@@ -1,0 +1,5 @@
+assets/js/vendor
+node_modules
+public
+.DS_Store
+_gen
