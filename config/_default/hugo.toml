@@ -1,5 +1,5 @@
 title = "User Portal"
-baseurl = "/"
+baseurl = "/gdi-userportal-docs/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -32,6 +32,7 @@ copyRight = "Copyright (c) 2023 Genomic Data Infrastructure"
 [outputFormats.searchIndex]
   mediaType = "application/json"
   baseName = "search-index"
+  path = "gdi-userportal-docs"
   isPlainText = true
   notAlternative = true
 
