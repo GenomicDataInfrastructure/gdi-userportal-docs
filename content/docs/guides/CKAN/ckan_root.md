@@ -34,9 +34,9 @@ CKAN gutter community chat:
 
 ## Table of Contents
 
-* [CKAN, deployment and scaling](https://health-ri.atlassian.net/wiki/x/EYAZC)
-* [Civity ckan-docker development with Docker](https://health-ri.atlassian.net/wiki/x/DwBjBw)
-* [Setting up Civity/ckan-docker in Azure for testing](https://health-ri.atlassian.net/wiki/x/DQBiBw)
-* [Setting up nginx with correct MIME types with CKAN](https://health-ri.atlassian.net/wiki/x/DgD4Bw)
-* [Test CKAN harvesting of DCAT-AP](https://health-ri.atlassian.net/wiki/x/AYCaBw)
-* [Schemas format, extension and management](https://health-ri.atlassian.net/wiki/x/DgAaCw)
+* [CKAN, deployment and scaling](/CKAN/ckan_pages/deployment_and_scaling.md)
+* [CKAN, [WIP] CKAN DB Structure and Fields Mapping Strategy](/CKAN/ckan_pages/mapping.md)
+* [CKAN, Schemas format, extension and management](/CKAN/ckan_pages/scheming.md)
+* [Harvester](/CKAN/ckan_pages/Harvester/harvester_root.md)
+    * [Test CKAN harvesting of DCAT-AP](/CKAN/ckan_pages/Harvester/harvester_pages/test_harvester_dcat.md)
+    * [Setting up nginx with correct MIME types with CKAN](/CKAN/ckan_pages/Harvester/harvester_pages/nginx_rdf.md)
