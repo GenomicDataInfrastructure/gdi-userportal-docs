@@ -45,7 +45,7 @@ The LSAAI configuration looks like:
 
 ![LSAAI Configuration](../../../../assets/images/LSAAI.png) Note: Sync mode must be "import" instead of "force"
 
-The first time you logged in. You get a question if you to want to be a member of the test environment. Please proceed
+The first time you log in you will get a question if you want to be a member of the test environment. Agree and proceed.
 
 
 
