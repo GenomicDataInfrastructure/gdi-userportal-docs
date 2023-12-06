@@ -4,7 +4,7 @@
 
 ## Keycloak
 
-For Keycloak, A Linux app service plan within Azure was utilised for Keycloak set up. One of the primary advantages is that HTTPS is readily configured out of the box, eliminating the need for additional work with certbot. Moreover, when using an app service plan, there's no need to be concerned about Linux updates.
+A Linux app service plan within Azure was utilised for Keycloak set up. One of the primary advantages is that HTTPS is readily configured out of the box, eliminating the need for additional work with certbot. Moreover, when using an app service plan, there's no need to be concerned about Linux updates.
 
 In addition, I followed the tutorial available at the following link to successfully set up Keycloak: [https://www.youtube.com/watch?v=neHFkd8c-gc](https://www.youtube.com/watch?v=neHFkd8c-gc)
 
