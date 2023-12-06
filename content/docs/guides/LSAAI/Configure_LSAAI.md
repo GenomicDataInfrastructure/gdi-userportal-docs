@@ -25,7 +25,7 @@ Additionally, the corresponding configuration entails:
 
 * Scopes: "openid", "profile", "email"
 * Method: POST the Clientsecret
-* Sync method: import
+* Sync Mode: import
 
 #### Azure AD
 
