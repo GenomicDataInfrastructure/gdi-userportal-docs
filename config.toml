@@ -1,0 +1,29 @@
+baseURL = "http://localhost"
+title = "GDI - User Portal Docs"
+theme = "hugo-geekdoc"
+
+pluralizeListTitles = false
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
+
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
+
+[taxonomies]
+   tag = "tags"
+
+[params.geekdocContentLicense]
+  name = "CC BY 4.0 DEED"
+  link = "https://creativecommons.org/licenses/by/4.0/"

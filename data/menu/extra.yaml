@@ -1,0 +1,10 @@
+---
+header:
+  - name: GitHub
+    ref: https://github.com/orgs/GenomicDataInfrastructure/repositories
+    icon: gdoc_github
+    external: true
+  - name: Website
+    ref: https://gdi.onemilliongenomes.eu/
+    icon: gdoc_language
+    external: true
