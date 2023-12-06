@@ -43,8 +43,7 @@ Discovery endpoint: [**https://login.elixir-czech.org/oidc/.well-known/openid-co
 
 The LSAAI configuration looks like:  
 
-![LSAAI Configuration](/LSAAI/LSAAI.png)
-
+![LSAAI Configuration](../../../../assets/images/LSAAI.png)
 
 The first time you logged in. You get a question if you to want to be a member of the test environment. Please proceed
 

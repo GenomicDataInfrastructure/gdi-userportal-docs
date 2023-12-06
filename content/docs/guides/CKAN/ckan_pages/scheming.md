@@ -52,11 +52,11 @@ Other possible fields keys are:
 
 ### Changing schema in a running CKAN instance
 
-Schema used is defined in `start_ckan_development.sh` by setting
+Schema used is defined in `setup_scheming.sh` by setting
 
 ```bash
 ckan config-tool $CKAN_INI -s app:main \
-    "scheming.dataset_schemas = ckanext.healthri:scheming/schemas/health_ri.json"\
+    "scheming.dataset_schemas = ckanext.healthri:scheming/schemas/gdi_userportal.json"\
     "scheming.presets = ckanext.scheming:presets.json"\
     "scheming.dataset_fallback = false"
 ```
@@ -76,9 +76,9 @@ A change of `ckan.ini` file triggers ckan update so changes will be applied almo
 
 A schema should be defined in the following format: `<extension name with dashes replaced with dots>`:`<path to shema .json file>` the extension is expected to be cloned under `/ckan-docker/src`
 
-e.g. the path from the example above (`ckanext.healthri:scheming/schemas/health_ri.json`) resolves to the following:
+e.g. the path from the example above (`ckanext.healthri:scheming/schemas/gdi_userportal.json`) resolves to the following:
 
-![Scheming](/CKAN/ckan_pages/scheming.png)
+![Scheming](../../../../../assets/images/scheming.png)
 
 ### Multischeming declaration
 
