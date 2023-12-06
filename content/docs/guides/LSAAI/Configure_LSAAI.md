@@ -4,7 +4,7 @@
 
 ## Keycloak
 
-For Keycloak, I utilized a Linux app service plan within Azure. One of the primary advantages is that HTTPS is readily configured out of the box, eliminating the need for additional work with certbot. Moreover, when using an app service plan, there's no need to be concerned about Linux updates.
+For Keycloak, A Linux app service plan within Azure was utilised for Keycloak set up. One of the primary advantages is that HTTPS is readily configured out of the box, eliminating the need for additional work with certbot. Moreover, when using an app service plan, there's no need to be concerned about Linux updates.
 
 In addition, I followed the tutorial available at the following link to successfully set up Keycloak: [https://www.youtube.com/watch?v=neHFkd8c-gc](https://www.youtube.com/watch?v=neHFkd8c-gc)
 
@@ -14,11 +14,11 @@ When configuring identity providers (IdPs), the following information becomes cr
 
 * ClientSecret
 * ClientId
-* Token endpoint
-* Access endpoint
-* Reply URL
+* Token URL
+* Authorization URL
+* Redirect URI
 
-Both the token endpoint and access point are derived from the IdP. When registering a service, you acquire the clientId and secret. The reply URL, which remains constant, is provided by Keycloak:  
+Both the 'Token URL' and 'Authorization URL' are derived from the IdP. When registering a service, you acquire the clientId and secret. The 'Redirect URI', which remains constant, is provided by Keycloak:  
 [https://{app_name_azure}.azurewebsites.net/auth/realms/master/broker/azuread/endpoint](https://{app_name_azure}.azurewebsites.net/auth/realms/master/broker/azuread/endpoint)
 
 Additionally, the corresponding configuration entails:
@@ -35,7 +35,7 @@ For Azure integration, I followed the tutorial at [https://www.youtube.com/watch
 ### LSAAI
 
 To register Keycloak as service I used [https://elixir-europe.org/platforms/compute/aai/service-providers.](https://elixir-europe.org/platforms/compute/aai/service-providers.) .  
-Initially, obtaining an account is the first step. If your componay isn't inherently recognized as an IdP, I initially registered an account with LSAAI. Subsequently, I proceeded to register our service. Please note that approval for this step may entail a waiting period.  
+Initially, obtaining an account is the first step. 1. Make sure your organisation is recognised as IdP and register if not. 2. Submit a registration for you application as a service. Please note that approval for this step may entail a waiting period.  
   
 Management of the app registration is done within: [https://services.aai.lifescience-ri.eu](https://services.aai.lifescience-ri.eu) .
 
@@ -43,7 +43,7 @@ Discovery endpoint: [**https://login.elixir-czech.org/oidc/.well-known/openid-co
 
 The LSAAI configuration looks like:  
 
-![LSAAI Configuration](../../../../assets/images/LSAAI.png)
+![LSAAI Configuration](../../../../assets/images/LSAAI.png) Note: Sync mode must be "import" instead of "force"
 
 The first time you logged in. You get a question if you to want to be a member of the test environment. Please proceed
 
