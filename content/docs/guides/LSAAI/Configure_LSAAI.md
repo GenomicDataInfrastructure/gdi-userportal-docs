@@ -35,7 +35,7 @@ For Azure integration, I followed the tutorial at [https://www.youtube.com/watch
 ### LSAAI
 
 To register Keycloak as service I used [https://elixir-europe.org/platforms/compute/aai/service-providers.](https://elixir-europe.org/platforms/compute/aai/service-providers.) .  
-Initially, obtaining an account is the first step. 1. Make sure your organisation is recognised as IdP and register if not. 2. Submit a registration for you application as a service. Please note that approval for this step may entail a waiting period.  
+Initially, obtaining an account is the first step. 1. Make sure your organisation is recognised as an IdP and register it if not. 2. Submit a registration for your application as a service. Please note that approval for this step may entail a waiting period.  
   
 Management of the app registration is done within: [https://services.aai.lifescience-ri.eu](https://services.aai.lifescience-ri.eu) .
 
