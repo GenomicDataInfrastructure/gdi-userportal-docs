@@ -16,8 +16,8 @@ geekdocAnchor: false
 
 ## Action points
 * Document CKAN API on gdi-userportal-docs
-* Discuss with WP3 how we can use `*.onemilliongenomes.eu`
-* Discuss with WP3 environments for User Portal
+* Discuss on how we can use `*.onemilliongenomes.eu`
+* Define deployment environments for User Portal
 * Expose Synthetic data from Starter Kit to be harvested by User Portal
 * Update application architecture to add diagrams and more details on AuthN / AuthZ.
 * Start discussions on minimum metadata model for User Portal
