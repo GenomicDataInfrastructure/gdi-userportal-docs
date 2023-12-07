@@ -15,10 +15,16 @@ geekdocAnchor: false
 * We need to improve the application architecture to provide mode details on technologies, and responsibilities.
 
 ## Action points
-* Document CKAN API on gdi-userportal-docs
-* Discuss on how we can use `*.onemilliongenomes.eu`
-* Define deployment environments for User Portal
-* Expose Synthetic data from Starter Kit to be harvested by User Portal
-* Update application architecture to add diagrams and more details on AuthN / AuthZ.
-* Start discussions on minimum metadata model for User Portal
-* Start discussions on Aggregated Output from Beacon Network 
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-docs/7?label=Document%20CKAN%20API)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckan-docker/11?label=Use%201%2BMG%20domain)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckan-docker/12?label=Define%20deployment%20environments%20for%20User%20Portal%20)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckan-docker/13?label=Expose%20Synthetic%20data%20from%20Starter%20Kit)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-docs/4?label=Add%20details%20to%20Application%20Architecture)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-docs/3?label=Define%20a%20minimum%20metadata%20model%20design%20for%20GDI)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-docs/8?label=Define%20a%20aggregated%20output%20from%20Beacon%20for%20GDI)

@@ -18,10 +18,22 @@ geekdocAnchor: false
 * The wishlist button + overview of wishlist are out of scope for January milestone;
 
 ## Action points
-* Check if it is doable on deploy CKAN on Elixir LU by Thursday - @Bruno
-* If not, deploy temporarily on Azure HealthRI - @Hans
-* Export Harvester and LS-AAI integration documentation to markdown files - @Hans
-* Create doc repo for GDI User Portal - @Bruno
-* Configure harvester - @Hans
-* Share with HealthRI AGPL rules regarding state of changes - @Bruno
-* Add concrete stories in zenhub to make visible our progress - @Tasneem, @Hans, @Bruno
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckan-docker/7?label=Automate%20deployment%20on%20Elixir%20LU)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-docs/9?label=Add%20documentation%20from%20Health-RI)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckan-docker/8?label=Configure%20Harvester)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-apigateway/1?label=Make%20gdi-userportal-apigateway%20FOSS%20license%20compliant)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckan-docker/9?label=Make%20gdi-userportal-ckan-docker%20FOSS%20license%20compliant)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckanext-dcat/4?label=Make%20gdi-userportal-ckanext-dcat%20FOSS%20license%20compliant)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckanext-gdi-userportal/7?label=Make%20gdi-userportal-ckanext-gdi-userportal%20FOSS%20license%20compliant)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckanext-harvest/3?label=Make%20gdi-userportal-ckanext-harvest%20FOSS%20license%20compliant)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-ckanext-scheming/3?label=Make%20gdi-userportal-ckanext-scheming%20FOSS%20license%20compliant)
+
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/state/GenomicDataInfrastructure/gdi-userportal-frontend/3?label=Makegdi-userportal-frontend%20FOSS%20license%20compliant)
