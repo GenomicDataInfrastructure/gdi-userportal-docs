@@ -122,24 +122,6 @@ On the other hand, Access Request standards are still incipient, and require ext
 
 Anyway, a Layered Service Oriented Architecture will play a vital role on isolating different aspect of the system. That will give us freedom to add new features and maintain existing components, with less effort.
 
-### Assumptions
-
-* ELSI metadata will be published with the dataset.
-* Use conditions profile will be published with the dataset.
-* User restrictions will be synchronised with Keycloak.
-* Keycloak will interface LS-AAI to share GA4GH passport and visas.
-* Datasets are uniquely identifiable on CKAN, Beacon and REMS.
-* Beacon Network and other GA4GH components will understand GA4GH visas issue by a variety of different access request tools.
-* Access Request tools (EDIC REMS) will issue GA4GH visas into a centralised LS-AAI.
-
-### Identified gaps
-
-* It is not clear how LS-AAI revokes visas.
-* The development of new integration between Keycloak and LS-AAI is required.
-* The development of a micro-service to aggregate query outputs from CKAN and Beacon Network is required.
-* REMS does not pushes events on application status changes, or on user restrictions changes.
-* REMS does not implement use conditions standards, strongly recommended for automated pre-processing of access request.
-
 ### References:
 * https://www.ga4gh.org/framework/
 * https://github.com/ga4gh-beacon
