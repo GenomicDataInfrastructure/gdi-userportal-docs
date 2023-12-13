@@ -102,3 +102,7 @@ However, people tend to agree that Gravitee uses many RAM but provides good perf
 - Requires a database
 - Customization can be tricky
 - Bound to the Portal to configure the endpoints and routing
+
+## Summary
+
+We recommend Kong, as it is lightweight and does not require several different components to start using.
