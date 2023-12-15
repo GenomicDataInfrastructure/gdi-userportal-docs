@@ -1,5 +1,5 @@
 ---
-title: Notes from WP4 Meeting Dec 5th 2023
+title: 7 December 2023 - WP4 Meeting
 geekdocAnchor: false
 ---
 
