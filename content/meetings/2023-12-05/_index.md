@@ -1,5 +1,5 @@
 ---
-title: Notes from Dec 5th 2023
+title: 5 December 2023
 geekdocAnchor: false
 ---
 
