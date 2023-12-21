@@ -57,6 +57,8 @@ pip install -r <path to local extension repo>/requirements.txt
 pip install -r <path to local extension repo>/dev-requirements.txt
 ```
 
+4. Set up a postgres database, specify database connection string in `ckan.ini` and `test-core.ini`.
+
 ## Testing
 
 Testing strategy for a plugin would depend on plugin functionality. 

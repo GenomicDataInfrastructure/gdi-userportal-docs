@@ -39,7 +39,7 @@ CKAN gutter community chat:
 
 ## Table of Contents
 
-* [CKAN, deployment and scaling](./extension-local-setup-and-testing/_index.md)
+* [Local setup and testing of an extension](./extension-local-setup-and-testing/_index.md)
 * [CKAN, [WIP] CKAN DB Structure and Fields Mapping Strategy](./mapping/_index.md)
 * [CKAN, Schemas format, extension and management](./scheming/_index.md)
 * [Harvester](./harvester)
