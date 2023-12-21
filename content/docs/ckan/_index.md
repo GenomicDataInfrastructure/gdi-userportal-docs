@@ -39,9 +39,9 @@ CKAN gutter community chat:
 
 ## Table of Contents
 
-* [CKAN, deployment and scaling](/CKAN/ckan_pages/deployment_and_scaling.md)
-* [CKAN, [WIP] CKAN DB Structure and Fields Mapping Strategy](/CKAN/ckan_pages/mapping.md)
-* [CKAN, Schemas format, extension and management](/CKAN/ckan_pages/scheming.md)
-* [Harvester](/CKAN/ckan_pages/Harvester/harvester_root.md)
-    * [Test CKAN harvesting of DCAT-AP](/CKAN/ckan_pages/Harvester/harvester_pages/test_harvester_dcat.md)
-    * [Setting up nginx with correct MIME types with CKAN](/CKAN/ckan_pages/Harvester/harvester_pages/nginx_rdf.md)
+* [Local setup and testing of an extension](./extension-local-setup-and-testing/_index.md)
+* [CKAN, [WIP] CKAN DB Structure and Fields Mapping Strategy](./mapping/_index.md)
+* [CKAN, Schemas format, extension and management](./scheming/_index.md)
+* [Harvester](./harvester)
+    * [Test CKAN harvesting of DCAT-AP](./harvester/test_harvester_dcat/_index.md)
+    * [Setting up nginx with correct MIME types with CKAN](./harvester/nginx-rdf/_index.md)
