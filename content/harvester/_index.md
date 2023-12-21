@@ -1,8 +1,8 @@
-# Testing CKAN harvesting of FAIR data points?
+---
+title: Testing Harvesting of FAIR Data Points
+---
 
-Tutorial made on 20/12/2023
-
-We assume that CKAN is properly set up (as documented in this wiki) and running.
+First, make sure that the `fairdatapointharvester` extension has been added to the CKAN plugins.
 
 After signing in to the CKAN portal, go to CKAN harvest page (e.g. http://localhost:5500/harvest). Click on “Add Harvest Source”.
 
@@ -11,7 +11,7 @@ Fill in the following fields:
 - URL of the fair data points. Example: https://fair.healthinformationportal.eu/
 - Title
 - Source type: "FAIR data point harvester"
-- Configuration: { "profile": "fairdatapoint_dcat_ap" }
+- Configuration: `{ "profile": "fairdatapoint_dcat_ap" }`
 
 Click on "Save".
 
