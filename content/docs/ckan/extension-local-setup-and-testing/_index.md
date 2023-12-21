@@ -46,7 +46,7 @@ In requirements.txt it may be set as `pyyaml==5.4.1` or `pyyaml==6.0.1`, if it c
 
 3. Install required extensions
 
-Each extension should be installed as a package as described in [README for regular installation](README.md#installation) or [development installation](README.md#developer-installation).
+Each extension should be installed as a package as described in [README for regular installation](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-fairdatapoint/blob/SRP-156-setup-base-unit-test-for-a-ckan-extension/README.md#installation) or [development installation](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-fairdatapoint/blob/SRP-156-setup-base-unit-test-for-a-ckan-extension/README.md#developer-installation).
 Alternatively an extension can be cloned first to a desired location and then installed to the virtual environment from file, e.g.:
 ```commandline
 pip install -e file:///<path to local extension repo>/ckan-fairdatapoint#egg=ckanext-fairdatapoint
