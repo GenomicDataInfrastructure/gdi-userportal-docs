@@ -80,7 +80,11 @@ To mitigate integrations issue between the User Portal and other services,
 
 #### Authentication
 
-Responsible to connect to the AAI and IDP, to authenticate and retrieve authorisation. It will be implemented via OIDC, following the GA4GH passport specification. The token will be shared among all the components.
+Responsible for validating that a user corresponds to the expected person. This is achieved through the OIDC protocol, allowing users to login using their host organisations. The confidence that a logged-in user corresponds to the expected person depends on the assurance level of the idP of used to authenticate the current session. The relevant assurance levels are defined in the [eIDAS Regulation](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2014.257.01.0073.01.ENG).
+
+#### Authorization
+
+This component is responsible for validating the different authorization of a logged-in user. This is achieved by following the GA4GH Passport specification, and sharing passports between components. Upon access to a restricted resource, the passport granting access is validated at the authority granting the authorization, to ensure that the passport has not been revoked during the current session.
 
 #### CKAN API
 
