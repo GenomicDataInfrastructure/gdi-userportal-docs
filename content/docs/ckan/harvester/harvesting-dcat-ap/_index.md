@@ -1,5 +1,5 @@
 ---
-title: Test CKAN harvesting of DCAT-AP
+title: Test harvesting of DCAT-AP
 ---
 
 Assuming the CKAN development with is set up as documented in this wiki.

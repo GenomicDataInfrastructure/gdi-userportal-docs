@@ -1,5 +1,5 @@
 ---
-title: Testing Harvesting of FAIR Data Points
+title: Testing harvesting of FAIR Data Points
 ---
 
 First, make sure that the `fairdatapointharvester` extension has been added to the CKAN plugins.
