@@ -46,3 +46,4 @@ CKAN gutter community chat:
     * [Test CKAN harvesting of DCAT-AP](./harvester/test_harvester_dcat/_index.md)
     * [Setting up nginx with correct MIME types with CKAN](./harvester/nginx-rdf/_index.md)
     * [User Roles](./user-roles/_index.md)
+* [CKAN, Auditing](./auditing/_index.md)
