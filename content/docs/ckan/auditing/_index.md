@@ -10,7 +10,7 @@ ckan.auth.public_activity_stream_detail = true
 
 More about ckan activity settings: https://docs.ckan.org/en/2.10/maintaining/configuration.html
 
-If you have expericience with older versions of CKAN. Since 2.10 Activity needs to be activated as plugin. See changelog https://docs.ckan.org/en/2.10/changelog.html
+If you have expericience with older versions of CKAN: since 2.10 Activity needs to be activated as plugin. See changelog https://docs.ckan.org/en/2.10/changelog.html
 
 With the right permission. You can view activities at dataset level or at organisation level
 
@@ -20,5 +20,5 @@ With the right permission. You can view activities at dataset level or at organi
 
 And the dif view
 
-![Dif view](./dif.png)
+![Diff view](./diff.png)
 
