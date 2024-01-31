@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Geekdoc contributors
+
+SPDX-License-Identifier: MIT
+-->
+
 {{- $source := ($.Page.Resources.ByType "image").GetMatch (printf "%s" (.Get "name")) }}
 {{- $customAlt := .Get "alt" }}
 {{- $customSize := .Get "size" | lower }}

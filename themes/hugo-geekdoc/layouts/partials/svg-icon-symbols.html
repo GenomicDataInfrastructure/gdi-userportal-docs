@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Geekdoc contributors
+
+SPDX-License-Identifier: MIT
+-->
+
 {{ range resources.Match "sprites/*.svg" }}
   {{ printf "<!-- geekdoc include: %s -->" . | safeHTML }}
   {{ .Content | safeHTML }}

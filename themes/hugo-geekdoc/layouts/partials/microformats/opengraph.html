@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Geekdoc contributors
+
+SPDX-License-Identifier: MIT
+-->
+
 {{ $isPage := or (and (ne .Type "posts") (in "section page" .Kind )) (and (eq .Type "posts") (eq .Kind "page")) }}
 
 {{- if ne .Kind "home" }}
