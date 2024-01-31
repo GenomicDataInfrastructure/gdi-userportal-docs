@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Stichting Health-RI
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
 ---
 title: Setting up nginx with correct MIME types with CKAN
 ---
