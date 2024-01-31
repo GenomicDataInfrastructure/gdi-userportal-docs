@@ -1,12 +1,12 @@
+---
+title: Testing harvesting of FAIR Data Points
+---
+
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: Testing harvesting of FAIR Data Points
----
 
 First, make sure that the `fairdatapointharvester` extension has been added to the CKAN plugins.
 

@@ -1,12 +1,11 @@
+---
+title: Schemas format, extension and management
+---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: Schemas format, extension and management
----
 
 This document describes CKAN scheming strategy and ways to configure, replace and maintain dataset schemas.
 

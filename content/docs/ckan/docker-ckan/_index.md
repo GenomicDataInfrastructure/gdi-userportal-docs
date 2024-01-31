@@ -1,12 +1,11 @@
+---
+title: GDI User Portal CKAN Docker
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: GDI User Portal CKAN Docker
----
 
 # CKAN for GDI - User Portal
 

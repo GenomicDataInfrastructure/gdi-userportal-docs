@@ -1,13 +1,12 @@
+---
+title: 15 December 2023
+geekdocAnchor: false
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: 15 December 2023
-geekdocAnchor: false
----
 
 ## Agenda
 * Pull Request review:

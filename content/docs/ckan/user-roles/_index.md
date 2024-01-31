@@ -1,13 +1,11 @@
+---
+title: User Roles
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: User Roles
----
-
 ## Platform-Level Roles
 
 ### 1. Visitor

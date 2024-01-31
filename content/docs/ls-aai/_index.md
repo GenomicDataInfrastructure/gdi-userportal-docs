@@ -1,13 +1,11 @@
+---
+title: LS-AAI
+---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: LS-AAI
----
-
 ## Keycloak
 
 For Keycloak, A Linux app service plan within Azure was utilised for Keycloak set up. One of the primary advantages is that HTTPS is readily configured out of the box, eliminating the need for additional work with certbot. Moreover, when using an app service plan, there's no need to be concerned about Linux updates.

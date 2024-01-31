@@ -1,13 +1,12 @@
+---
+title: 31 January 2024
+geekdocAnchor: false
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: 31 January 2024
-geekdocAnchor: false
----
 
 ## Agenda
 - Next sprint goals - 6 February to 23 February

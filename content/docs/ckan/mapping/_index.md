@@ -1,12 +1,11 @@
+---
+title: CKAN DB Structure and Fields Mapping Strategy
+---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: CKAN DB Structure and Fields Mapping Strategy
----
 
 ### Dataset tables
 

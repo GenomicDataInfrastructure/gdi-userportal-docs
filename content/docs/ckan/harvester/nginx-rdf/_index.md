@@ -1,12 +1,12 @@
+---
+title: Setting up nginx with correct MIME types with CKAN
+---
+
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: Setting up nginx with correct MIME types with CKAN
----
 
 To test harvesting of DCAT in CKAN, it’s easiest to set up a simple web server. If CKAN is run using the previously set-up docker-compose, it can be done with a few commands.
 

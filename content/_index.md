@@ -1,14 +1,15 @@
+---
+title: Welcome to the documentation
+geekdocAlign: center
+geekdocAnchor: false
+---
+
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
 
----
-title: Welcome to the documentation
-geekdocAlign: center
-geekdocAnchor: false
----
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable MD033 -->
 

@@ -1,14 +1,12 @@
+---
+title: 5 December 2023
+geekdocAnchor: false
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: 5 December 2023
-geekdocAnchor: false
----
-
 ## Agenda
 * License requirements for CKAN and its extensions
 * Front-end development

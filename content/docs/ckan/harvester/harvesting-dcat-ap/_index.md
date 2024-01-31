@@ -1,12 +1,11 @@
+---
+title: Test harvesting of DCAT-AP
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: Test harvesting of DCAT-AP
----
 
 Assuming the CKAN development with is set up as documented in this wiki.
 

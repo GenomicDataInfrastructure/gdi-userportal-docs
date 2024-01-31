@@ -1,13 +1,12 @@
+---
+title: 7 December 2023 - WP4 Meeting
+geekdocAnchor: false
+---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
-
----
-title: 7 December 2023 - WP4 Meeting
-geekdocAnchor: false
----
 
 ## Agenda
 * Progress on Tasks 4.1, 4.2 and 4.3
