@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Stichting Health-RI
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
 ---
 title: Schemas format, extension and management
 ---

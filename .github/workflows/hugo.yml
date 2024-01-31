@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2024 PNED G.I.E.
+# 
+# SPDX-License-Identifier: Apache-2.0
+
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
@@ -40,9 +44,11 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: REUSE Compliance Check
+        uses: fsfe/reuse-action@v2  
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3

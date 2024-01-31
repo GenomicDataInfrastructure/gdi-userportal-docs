@@ -1,9 +1,16 @@
+<!--
+SPDX-FileCopyrightText: 2024 PNED G.I.E.
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
 ---
 title: GDI User Portal CKAN Docker
 ---
 
-## Overview
-The Data Catalogue for the User Portal is on [GenomicDataInfrastructure/gdi-userportal-ckan-docker](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckan-docker).
+# CKAN for GDI - User Portal
+
+## 1. Overview
 
 This project has two purposes:
 1. Prepare a docker image for CKAN, with all extensions and configurations needed to deploy the catalogue for the User Portal.
@@ -22,29 +29,31 @@ The non-CKAN images are as follows:
 
 CKAN and all the components are configured using environment variables that you can set in the `.env` file.
 
-## Requirements to run
+## 2. Before running locally
 
-* Docker with compose. `colima` is curently beeing used.
-* Enough computer resources, example: `colima start --arch aarch64 --vm-type=vz --mount-type=virtiofs --vz-rosetta --cpu 4 --memory 10`
+* Install docker with support to docker compose v2.
+  * Ensure you have enough computer resources, if you are using `colima`: `colima start --arch aarch64 --vm-type=vz --mount-type=virtiofs --vz-rosetta --cpu 4 --memory 10`
+* Add `127.0.0.1  keycloak` to `/etc/hosts`.
+* Copy `.env.example` to `.env`.
 
-## Useful commands
+## 3. Useful commands
 
-### Build and start dev environment
+### 3.1. Build and start dev environment
 ```bash
-docker compose -f docker-compose.dev.yml up -d --build
+docker compose up -d --build
 ```
 
-### Remove images and volumes
+### 3.2. Remove images and volumes
 ```bash
-docker compose -f docker-compose.dev.yml down -v
+docker compose down -v
 ```
 
-### Logs
+### 3.3. Logs
 ```bash
-docker compose -f docker-compose.dev.yml logs -f
+docker compose logs -f
 ```
 
-## Installing new extensions
+## 4. installing new extensions
 
 The current agreement is:
 * Fork all the branches from the extension's repo into [GitHub GDI](https://github.com/GenomicDataInfrastructure).
@@ -59,13 +68,3 @@ The current agreement is:
 All Docker Compose commands in this README will use the V2 version of Compose ie: `docker compose`. The older version (V1) 
 used the `docker-compose` command. Please see [Docker Compose](https://docs.docker.com/compose/compose-v2/) for
 more information.
-
-## Copying and License
--------------------
-
-This material is copyright (c) 2006-2023 Open Knowledge Foundation and contributors.
-
-It is open and licensed under the GNU Affero General Public License (AGPL) v3.0
-whose full text may be found at:
-
-http://www.fsf.org/licensing/licenses/agpl-3.0.html
