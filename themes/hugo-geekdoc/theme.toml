@@ -1,7 +1,3 @@
-# SPDX-FileCopyrightText: 2024 Geekdoc contributors
-#
-# SPDX-License-Identifier: MIT
-
 name = "Geekdoc"
 license = "MIT"
 licenselink = "https://github.com/thegeeklab/hugo-geekdoc/blob/main/LICENSE"

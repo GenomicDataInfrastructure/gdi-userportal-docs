@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2024 Geekdoc contributors
-
-SPDX-License-Identifier: MIT
--->
-
 {{- if default true .Site.Params.geekdocDarkModeToggle }}
   <script src="{{ index (index .Site.Data.assets "colortheme.js") "src" | relURL }}"></script>
 {{- end }}

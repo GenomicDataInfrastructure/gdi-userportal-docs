@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2024 Geekdoc contributors
-
-SPDX-License-Identifier: MIT
--->
-
 # Geekdoc
 
 [![Build Status](https://ci.thegeeklab.de/api/badges/thegeeklab/hugo-geekdoc/status.svg)](https://ci.thegeeklab.de/repos/thegeeklab/hugo-geekdoc)

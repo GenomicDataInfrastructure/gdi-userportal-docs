@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2024 Geekdoc contributors
-
-SPDX-License-Identifier: MIT
--->
-
 {{- $raw := or (hasPrefix .Text "<img") (hasPrefix .Text "<figure") -}}
 {{- $code := hasPrefix .Text "<code" -}}
 <a

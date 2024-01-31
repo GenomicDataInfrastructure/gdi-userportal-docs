@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2024 Geekdoc contributors
-
-SPDX-License-Identifier: MIT
--->
-
 {{ $id := substr (sha1 .Inner) 0 8 }}
 <div class="gdoc-expand">
   <label class="gdoc-expand__head flex justify-between" for="{{ $id }}-{{ .Ordinal }}">

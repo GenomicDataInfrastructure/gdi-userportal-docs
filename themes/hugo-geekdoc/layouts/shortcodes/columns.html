@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2024 Geekdoc contributors
-
-SPDX-License-Identifier: MIT
--->
-
 {{- $size := default "regular" (.Get "size" | lower) }}
 
 {{- if not (in (slice "regular" "large" "small") $size) }}
