@@ -18,3 +18,7 @@ SPDX-License-Identifier: CC-BY-4.0
 - `id.` - Keycloak
 - `api.` - Kong API Gateway
 - `catalogue.` - CKAN Catalogue
+
+## Table of Contents
+
+* [Deployment CKAN within Azure](./azure/_index.md)
