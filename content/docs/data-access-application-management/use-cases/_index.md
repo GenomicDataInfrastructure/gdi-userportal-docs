@@ -47,7 +47,7 @@ flowchart TB
     style note fill:#8e8e8e
 ```
 
-## Add dataset to basket
+## Add/remove dataset to/from basket
 
 ```mermaid
 flowchart LR
@@ -55,8 +55,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -65,10 +65,10 @@ flowchart LR
     style daam fill:#999be2
 
     add_dataset_1[/"`
-        1 - Add/remove Dataset to basket
+        1 - Add/remove Dataset to/from basket
     `"/]
     add_dataset_2[/"`
-        2 - Add/remove Dataset to basket
+        2 - Add/remove Dataset to/from basket
     `"/]
     group_dataset_by_authority_workflow[/"`
         3 - Group Datasets by authority workflow
@@ -83,13 +83,13 @@ flowchart LR
     style dataset_added fill:#FF983D
 
     user -.- add_dataset_1
-    add_dataset_1 -.-> user_portal
-    user_portal -.- add_dataset_2
+    add_dataset_1 -.-> website
+    website -.- add_dataset_2
     add_dataset_2 -.-> daam
     daam -.- group_dataset_by_authority_workflow
     group_dataset_by_authority_workflow -.-> daam
     daam -.- dataset_added
-    dataset_added -.-> user_portal
+    dataset_added -.-> website
 ```
 
 ## Retrieve basket
@@ -100,8 +100,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
 
     daam{{"`
@@ -124,11 +124,11 @@ flowchart LR
     style basket_retrieved fill:#FF983D
 
     user -.- retrieve_basket_1
-    retrieve_basket_1 -.-> user_portal
-    user_portal -.- retrieve_basket_2
+    retrieve_basket_1 -.-> website
+    website -.- retrieve_basket_2
     retrieve_basket_2 -.-> daam
     daam -.- basket_retrieved
-    basket_retrieved -.-> user_portal
+    basket_retrieved -.-> website
 ```
 
 ## Create application from basket
@@ -139,11 +139,11 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -171,12 +171,12 @@ flowchart LR
     style application_created_note fill:#8e8e8e
 
     user -.- create_application_1
-    create_application_1 -.-> user_portal
-    user_portal -.- create_application_2
+    create_application_1 -.-> website
+    website -.- create_application_2
     create_application_2 -.-> daam
     daam -.- application_created
     application_created_note -.- application_created
-    application_created -.-> user_portal
+    application_created -.-> website
 ```
 
 ## Retrieve application
@@ -187,8 +187,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -211,11 +211,11 @@ flowchart LR
     style application_retrieved fill:#FF983D
 
     user -.- retrieve_application_1
-    retrieve_application_1 -.-> user_portal
-    user_portal -.- retrieve_application_2
+    retrieve_application_1 -.-> website
+    website -.- retrieve_application_2
     retrieve_application_2 -.-> daam
     daam -.- application_retrieved
-    application_retrieved -.-> user_portal
+    application_retrieved -.-> website
 ```
 
 ## Accept terms of application
@@ -226,8 +226,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -250,11 +250,11 @@ flowchart LR
     style terms_accepted fill:#FF983D
 
     user -.- accept_terms_1
-    accept_terms_1 -.-> user_portal
-    user_portal -.- accept_terms_2
+    accept_terms_1 -.-> website
+    website -.- accept_terms_2
     accept_terms_2 -.-> daam
     daam -.- terms_accepted
-    terms_accepted -.-> user_portal
+    terms_accepted -.-> website
 ```
 
 ## Attach file to application
@@ -265,8 +265,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -289,11 +289,11 @@ flowchart LR
     style file_attached fill:#FF983D
 
     user -.- attach_file_1
-    attach_file_1 -.-> user_portal
-    user_portal -.- attach_file_2
+    attach_file_1 -.-> website
+    website -.- attach_file_2
     attach_file_2 -.-> daam
     daam -.- file_attached
-    file_attached -.-> user_portal
+    file_attached -.-> website
 ```
 
 ## Add/remove applicant
@@ -304,8 +304,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -328,11 +328,11 @@ flowchart LR
     style applicant_added fill:#FF983D
 
     user -.- add_applicant_1
-    add_applicant_1 -.-> user_portal
-    user_portal -.- add_applicant_2
+    add_applicant_1 -.-> website
+    website -.- add_applicant_2
     add_applicant_2 -.-> daam
     daam -.- applicant_added
-    applicant_added -.-> user_portal
+    applicant_added -.-> website
 ```
 
 ## Add/remove dataset
@@ -343,8 +343,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -367,11 +367,11 @@ flowchart LR
     style dataset_added fill:#FF983D
 
     user -.- add_dataset_1
-    add_dataset_1 -.-> user_portal
-    user_portal -.- add_dataset_2
+    add_dataset_1 -.-> website
+    website -.- add_dataset_2
     add_dataset_2 -.-> daam
     daam -.- dataset_added
-    dataset_added -.-> user_portal
+    dataset_added -.-> website
 ```
 
 ## Add/remove DUO
@@ -382,8 +382,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -406,11 +406,11 @@ flowchart LR
     style duo_added fill:#FF983D
 
     user -.- add_duo_1
-    add_duo_1 -.-> user_portal
-    user_portal -.- add_duo_2
+    add_duo_1 -.-> website
+    website -.- add_duo_2
     add_duo_2 -.-> daam
     daam -.- duo_added
-    duo_added -.-> user_portal
+    duo_added -.-> website
 ```
 
 ## Save form
@@ -421,8 +421,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -451,11 +451,11 @@ flowchart LR
 
     user -.- save_form_changes_1
     save_form_changes_note -.- save_form_changes_1
-    save_form_changes_1 -.-> user_portal
-    user_portal -.- save_form_changes_2
+    save_form_changes_1 -.-> website
+    website -.- save_form_changes_2
     save_form_changes_2 -.-> daam
     daam -.- form_saved
-    form_saved -.-> user_portal
+    form_saved -.-> website
 ```
 
 ## Submit application
@@ -466,8 +466,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -485,7 +485,7 @@ flowchart LR
     style submit_application_2 fill:#1C8092
 
     submit_application_note>"`
-        *Only DRAFT application can be submitted*
+        *Only DRAFT/RETURNED application can be submitted*
     `"]
     style submit_application_note fill:#8e8e8e
 
@@ -496,11 +496,11 @@ flowchart LR
 
     user -.- submit_application_1
     submit_application_note -.- submit_application_1
-    submit_application_1 -.-> user_portal
-    user_portal -.- submit_application_2
+    submit_application_1 -.-> website
+    website -.- submit_application_2
     submit_application_2 -.-> daam
     daam -.- application_submitted
-    application_submitted -.-> user_portal
+    application_submitted -.-> website
 ```
 
 ## Notify user
@@ -521,8 +521,8 @@ flowchart LR
         Committee
     `"))
     
-    dac_portal("`
-        DAC Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -551,11 +551,11 @@ flowchart LR
     style notify_user fill:#1C8092
 
     dac -.- approve_application_1
-    approve_application_1 -.-> dac_portal
-    dac_portal -.- approve_application_2
+    approve_application_1 -.-> website
+    website -.- approve_application_2
     approve_application_2 -.-> daam
     daam -.- application_approved
-    application_approved -.-> dac_portal
+    application_approved -.-> website
     daam -.- notify_user
     notify_user -.-> email
     email -.-> user
@@ -569,8 +569,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -594,11 +594,11 @@ flowchart LR
     style notifications_retrieved fill:#FF983D
 
     user -.- retrieve_notifications_1
-    retrieve_notifications_1 -.-> user_portal
-    user_portal -.- retrieve_notifications_2
+    retrieve_notifications_1 -.-> website
+    website -.- retrieve_notifications_2
     retrieve_notifications_2 -.-> daam
     daam -.- notifications_retrieved
-    notifications_retrieved -.-> user_portal
+    notifications_retrieved -.-> website
 ```
 
 ## Copy as new application
@@ -609,8 +609,8 @@ flowchart LR
         User
     `"))
     
-    user_portal("`
-        User Portal
+    website("`
+        Website
     `")
     
     daam{{"`
@@ -638,10 +638,10 @@ flowchart LR
     style application_copied_note fill:#8e8e8e
 
     user -.- copy_application_1
-    copy_application_1 -.-> user_portal
-    user_portal -.- copy_application_2
+    copy_application_1 -.-> website
+    website -.- copy_application_2
     copy_application_2 -.-> daam
     daam -.- application_copied
     application_copied_note -.- application_copied
-    application_copied -.-> user_portal
+    application_copied -.-> website
 ```
