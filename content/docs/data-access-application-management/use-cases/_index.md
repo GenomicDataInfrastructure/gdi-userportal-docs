@@ -47,7 +47,69 @@ flowchart TB
     style note fill:#8e8e8e
 ```
 
-## Add/remove dataset to/from basket
+## Add dataset to basket
+
+```mermaid
+flowchart LR
+    user(("`
+        User
+    `"))
+    
+    website("`
+        Website
+    `")
+    
+    daam{{"`
+        Data Access Application Management
+    `"}}
+    dataset_metadata_repository{{"`
+        Dataset Metadata Repository
+    `"}}
+    style daam fill:#999be2
+    style dataset_metadata_repository fill:#999be2
+
+    add_dataset_1[/"`
+        1 - Add Dataset to basket
+    `"/]
+    add_dataset_2[/"`
+        2 - Add Dataset to basket
+    `"/]
+    group_dataset_by_authority_workflow[/"`
+        5 - Group Datasets by authority workflow
+    `"/]
+    style add_dataset_1 fill:#1C8092
+    style add_dataset_2 fill:#1C8092
+    style group_dataset_by_authority_workflow fill:#1C8092
+
+    retrieve_access_request_metadata[/"`
+        3 - Retrieve Access Request Metadata
+    `"/]
+    style retrieve_access_request_metadata fill:#8BB939
+
+    access_request_metadata_retrieved[/"`
+        4 - Access request metadata retrieved
+    `"/]
+    dataset_added[/"`
+        6 - Dataset added to basket
+    `"/]
+    style dataset_added fill:#FF983D
+    style access_request_metadata_retrieved fill:#FF983D
+
+    daam -.- dataset_added
+    dataset_added -.-> website
+    user -.- add_dataset_1
+    add_dataset_1 -.-> website
+    website -.- add_dataset_2
+    add_dataset_2 -.-> daam
+    daam -.- retrieve_access_request_metadata
+    retrieve_access_request_metadata -.-> dataset_metadata_repository
+    dataset_metadata_repository -.- access_request_metadata_retrieved
+    access_request_metadata_retrieved -.-> daam
+    daam -.- group_dataset_by_authority_workflow
+    group_dataset_by_authority_workflow -.-> daam
+```
+
+## Remove dataset from basket
 
 ```mermaid
 flowchart LR
@@ -65,20 +127,16 @@ flowchart LR
     style daam fill:#999be2
 
     add_dataset_1[/"`
-        1 - Add/remove Dataset to/from basket
+        1 - Remove Dataset from basket
     `"/]
     add_dataset_2[/"`
-        2 - Add/remove Dataset to/from basket
-    `"/]
-    group_dataset_by_authority_workflow[/"`
-        3 - Group Datasets by authority workflow
+        2 - Remove Dataset from basket
     `"/]
     style add_dataset_1 fill:#1C8092
     style add_dataset_2 fill:#1C8092
-    style group_dataset_by_authority_workflow fill:#1C8092
 
     dataset_added[/"`
-        4 - Dataset added to/removed from basket
+        3 - Dataset removed from basket
     `"/]
     style dataset_added fill:#FF983D
 
@@ -86,8 +144,6 @@ flowchart LR
     add_dataset_1 -.-> website
     website -.- add_dataset_2
     add_dataset_2 -.-> daam
-    daam -.- group_dataset_by_authority_workflow
-    group_dataset_by_authority_workflow -.-> daam
     daam -.- dataset_added
     dataset_added -.-> website
 ```
