@@ -280,20 +280,38 @@ flowchart LR
     attach_file_2[/"`
         2 - Attach file to/remove attachment from application
     `"/]
+    save_form_changes[/"`
+        4 - Save form of application
+    `"/]
     style attach_file_1 fill:#1C8092
     style attach_file_2 fill:#1C8092
+    style save_form_changes fill:#1C8092
+    
+    save_form_changes_note>"`
+        *Submit form changes of the attachement field only*
+    `"]
+    style save_form_changes_note fill:#8e8e8e
 
     file_attached[/"`
         3 - File attached to application
     `"/]
+    form_saved[/"`
+        5 - Form of application saved
+    `"/]
     style file_attached fill:#FF983D
+    style form_saved fill:#FF983D
 
+    file_attached -.-> website
+    website -.- save_form_changes
+    save_form_changes_note -.- save_form_changes
+    save_form_changes -.-> daam
+    daam -.- form_saved
+    form_saved -.-> website
     user -.- attach_file_1
     attach_file_1 -.-> website
     website -.- attach_file_2
     attach_file_2 -.-> daam
     daam -.- file_attached
-    file_attached -.-> website
 ```
 
 ## Add/remove applicant
