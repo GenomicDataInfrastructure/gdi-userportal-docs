@@ -21,4 +21,4 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ## Table of Contents
 
-* [Deployment CKAN within Azure](./azure/_index.md)
+{{< toc-tree >}} 
