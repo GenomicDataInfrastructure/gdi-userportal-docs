@@ -313,7 +313,7 @@ flowchart LR
     terms_accepted -.-> website
 ```
 
-## Attach file to application
+## Attach/remove file to/from application
 
 ```mermaid
 flowchart LR
