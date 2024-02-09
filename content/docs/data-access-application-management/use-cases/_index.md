@@ -370,7 +370,7 @@ flowchart LR
     daam -.- file_attached
 ```
 
-## Add/remove applicant
+## Add/remove member
 
 ```mermaid
 flowchart LR
@@ -387,26 +387,26 @@ flowchart LR
     `"}}
     style daam fill:#999be2
     
-    add_applicant_1[/"`
-        1 - Add/remove applicant to/from application
+    add_member_1[/"`
+        1 - Add/remove member to/from application
     `"/]
-    add_applicant_2[/"`
-        2 - Add/remove applicant to/from application
+    add_member_2[/"`
+        2 - Add/remove member to/from application
     `"/]
-    style add_applicant_1 fill:#1C8092
-    style add_applicant_2 fill:#1C8092
+    style add_member_1 fill:#1C8092
+    style add_member_2 fill:#1C8092
 
-    applicant_added[/"`
-        3 - Applicant added to/removed from application
+    member_added[/"`
+        3 - member added to/removed from application
     `"/]
-    style applicant_added fill:#FF983D
+    style member_added fill:#FF983D
 
-    user -.- add_applicant_1
-    add_applicant_1 -.-> website
-    website -.- add_applicant_2
-    add_applicant_2 -.-> daam
-    daam -.- applicant_added
-    applicant_added -.-> website
+    user -.- add_member_1
+    add_member_1 -.-> website
+    website -.- add_member_2
+    add_member_2 -.-> daam
+    daam -.- member_added
+    member_added -.-> website
 ```
 
 ## Add/remove dataset
