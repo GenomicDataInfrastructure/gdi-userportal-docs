@@ -56,13 +56,11 @@ flowchart LR
         user_portal -->|authenticate| keycloak
     end
 
-    subgraph External Components
-        user_portal -->|data level dataset discovery| beacon_network
-        user_portal -->|submit application| rems
-        rems -->|push GA4GH visas| keycloak
-        ckan -->|authenticate| keycloak
-        keycloak -->|fetch GA4GH visas| ls_aai
-    end
+    user_portal -->|data level dataset discovery| beacon_network
+    user_portal -->|submit application| rems
+    rems -->|push GA4GH visas| ls_aai
+    ckan -->|authenticate| keycloak
+    keycloak -->|fetch GA4GH visas| ls_aai
 ```
 
 * User Portal is the bridge to all the other components and their key features.
@@ -103,7 +101,6 @@ Conversely, opting for an independent user portal empowers us to implement up-to
 
 ### Components
 
-
 ```mermaid
 flowchart
     front_end("`
@@ -119,6 +116,11 @@ flowchart
     keycloak("`
 
     Keycloak
+
+    `")
+    rems("`
+
+    REMS
 
     `")
     subgraph Access Request Service
@@ -147,11 +149,19 @@ flowchart
         Module
 
         `")
+        rems_module("`
+
+        REMS
+        Module
+
+        `")
         access_request_submitter -->|check user restrictions| user_restrictions_module_2
+        access_request_submitter -->|submit access request| rems_module
         access_request_submitter -->|check use conditions| use_conditions_module_2
     end
     
     user_restrictions_module_2 -->|check user restrictions| keycloak
+    rems_module -->|submit access request| rems
 
     dataset_discovery_aggregator("`
 
