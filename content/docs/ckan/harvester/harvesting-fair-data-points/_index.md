@@ -25,10 +25,46 @@ Then, enter the CKAN container:
 
 `docker compose exec -it ckan-dev bash`
 
+# Local development  
+
 Inside the container, run the following command:
 
 `ckan --config=/srv/app/ckan.ini harvester run-test <id of harvester>`.
 
 The harvester id is the last part of the URL of the harvest source.
 
-You should now see datasets popping up in CKAN!
+
+# GDI CKAN container CRON Job for FAIR Data Harvesting
+
+## Overview
+
+The GDI package, available from the GDI GitHub repository, includes a CRON job functionality designed to automate the harvesting of FAIR datapoints. This automation ensures continuous and efficient data collection without manual intervention. The harvesting process is initiated through the CKAN portal, which activates two key background processes responsible for the operation: `ckan_gather_consumer` and `ckan_fetch_consumer`.
+
+## Background Processes
+
+The harvesting operation relies on two main background processes:
+
+- **`ckan_gather_consumer`**: Manages the gathering of data sources to be harvested.
+- **`ckan_fetch_consumer`**: Responsible for fetching the data from the sources identified by the gather process.
+
+These processes are crucial for the automated harvesting workflow, ensuring that data is continuously and efficiently collected and made available through the CKAN portal.
+
+## Monitoring Process Status
+
+To monitor the status of these background processes, the `supervisorctl` command is used. Executing this command provides real-time status information about each process involved in the harvesting operation. Here's how to check the process status:
+
+```bash
+supervisorctl status
+```
+
+Upon execution, you should see output similar to the following, indicating that both processes are running correctly:
+
+```
+ckan_fetch_consumer              RUNNING   pid 204, uptime 4:37:47
+ckan_gather_consumer             RUNNING   pid 205, uptime 4:37:47
+```
+
+This output shows that both `ckan_fetch_consumer` and `ckan_gather_consumer` are in the RUNNING state, along with their respective process IDs and uptime, confirming their active operation within the system.
+
+
+
