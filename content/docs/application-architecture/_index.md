@@ -287,6 +287,10 @@ It will be responsible for:
 - Filtering or flagging datasets according to user restrictions **(User restrictions should come from Keycloak)**;
 - Filtering or flagging datasets according to use conditions **(Use conditions should come within Datasets)**;
 
+### Software Stack
+
+![Stack](./stack.png)
+
 ### Deployment and Infrastructure
 
 User Portal components will delivered as docker images, to be deployed using docker compose or kubernetes.
