@@ -1,5 +1,6 @@
 ---
 title: Application Architecture
+weight: 1
 ---
 
 <!--

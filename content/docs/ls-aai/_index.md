@@ -1,5 +1,6 @@
 ---
 title: LS-AAI
+weight: 7
 ---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI

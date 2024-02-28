@@ -1,6 +1,7 @@
 ---
 title: 9 January 2024
 geekdocAnchor: false
+weight: 6
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.

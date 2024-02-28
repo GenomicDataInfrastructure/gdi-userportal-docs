@@ -1,5 +1,6 @@
 ---
 title: Docs
+weight: 1
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.

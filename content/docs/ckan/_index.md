@@ -1,5 +1,6 @@
 ---
 title: CKAN
+weight: 6
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.

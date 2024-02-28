@@ -17,9 +17,7 @@ And REMS also provides an extensive documentation, that can be found [here](http
 
 ## Authentication
 
-REMS requires OIDC to use the app, however for API integration REMS also supports API Key and User impersonation.
-
-For the User Portal we recommend using OIDC also for API, as it reduces the coupling between the two systems. This coupling is delegated to the Identity Provider.
+REMS requires OIDC to use the app, however for API integration REMS team suggests API Key and User impersonation. For more details, please check this [link](https://github.com/CSCfi/rems/blob/master/docs/using-the-api.md).
 
 ## Request & Response content type
 
