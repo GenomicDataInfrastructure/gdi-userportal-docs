@@ -62,7 +62,7 @@ In order to fetch access token from LS-AAI - or any IdP - one needs to configure
 3. Delete LS-AAI existing users, to ensure users are initialised correctly in Keycloak;
 4. Login with a LS-AAI user;
 5. Call Keycloak endpoint:
-```http
+```
 GET https://keycloak-test.healthdata.nl/realms/ckan/broker/LSAAI/token
 Authorization: {keycloak_access_token}
 ```
