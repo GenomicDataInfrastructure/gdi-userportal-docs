@@ -46,6 +46,23 @@ Discovery endpoint: [**https://login.elixir-czech.org/oidc/.well-known/openid-co
 
 The LSAAI configuration looks like:  
 
-![LSAAI Configuration](./LSAAI.png) Note: Sync mode must be "import" instead of "force"
+![LSAAI Configuration Part 1](./keycloak_part1.png)
+![LSAAI Configuration Part 2](./keycloak_part2.png)
+Note 1: Sync mode must be "import" instead of "force"\
+Note 2: `Store tokens` and `Stored tokens` must be on, to allow User Portal components to get LS-AAI `access_token`. That enables Beacon Network integration via Oauth2.\
 
 The first time you log in you will get a question if you want to be a member of the test environment. Agree and proceed.
+
+## Fetching LS-AAI Access Token from Keycloak
+
+In order to fetch access token from LS-AAI - or any IdP - one needs to configure Keycloak accordingly, and later request to Keycloak LS-AAI tokens.
+
+1. Go to `Keycloak Admin \ Identity Providers \ LS-AAI Provider Details`;
+2. Enable `Store Tokens` and `Stored tokens readable`;
+3. Delete LS-AAI existing users, to ensure users are initialised correctly in Keycloak;
+4. Login with a LS-AAI user;
+5. Call Keycloak endpoint:
+```http
+GET https://keycloak-test.healthdata.nl/realms/ckan/broker/LSAAI/token
+Authorization: {keycloak_access_token}
+```
