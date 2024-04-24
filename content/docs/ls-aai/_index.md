@@ -26,9 +26,11 @@ Both the 'Token URL' and 'Authorization URL' are derived from the IdP. When regi
 
 Additionally, the corresponding configuration entails:
 
-* Scopes: "openid", "profile", "email"
+* Scopes: "openid", "profile", "email" , "elixir_id"
 * Method: POST the Clientsecret
 * Sync method: import
+
+For Elixer_id additional mapper is needed
 
 #### Azure AD
 
@@ -55,6 +57,8 @@ The first time you log in you will get a question if you want to be a member of 
 
 ## Fetching LS-AAI Access Token from Keycloak
 
+### Option 1 
+
 In order to fetch access token from LS-AAI - or any IdP - one needs to configure Keycloak accordingly, and later request to Keycloak LS-AAI tokens.
 
 1. Go to `Keycloak Admin \ Identity Providers \ LS-AAI Provider Details`;
@@ -66,3 +70,59 @@ In order to fetch access token from LS-AAI - or any IdP - one needs to configure
 GET https://keycloak-test.healthdata.nl/realms/ckan/broker/LSAAI/token
 Authorization: {keycloak_access_token}
 ```
+
+### Option 2: Configuring OAuth 2.0 in Postman
+
+This guide will help you set up OAuth 2.0 authorization for a request in Postman and obtaining the LSAAI token.
+
+#### Steps to Configure OAuth 2.0
+
+1. **Open Postman Application**
+   Begin by opening the Postman application on your desktop.
+
+2. **Select a Request**
+   - Choose any existing request from your collections, or create a new one by clicking on the 'New' button and selecting 'Request'.
+
+3. **Authorization Setup**
+   - Navigate to the 'Authorization' tab within the selected request.
+
+4. **Set Authorization Type**
+   - From the 'Type' dropdown menu, select 'OAuth 2.0'.
+
+5. **Add Authorization Data to Request Headers**
+   - In the 'Add authorization data to' dropdown, select 'Request Headers'.
+
+6. **Current Token Configuration**
+   - For the 'Current Token' section, choose 'Bearer' as the token type.
+
+7. **Configure New Token**
+   Follow the steps below to configure a new token:
+
+   - **Token Name**: Enter a random name for your token.
+   
+   - **Grant Type**: Select 'Authorization Code' from the dropdown menu.
+   
+   - **Authorize Using Browser**: Ensure this box is checked to use your default web browser for the authorization.
+   
+   - **Auth URL**: Replace `{keycloak url}` and `{realm_name}` with the appropriate values for your Keycloak server and realm.
+     ```
+     {keycloak url}/realms/{realm_name}/protocol/openid-connect/auth
+     ```
+   
+   - **Access Token URL**: Similar to the Auth URL, fill in the Keycloak server and realm information.
+     ```
+     {keycloak url}/realms/{realm_name}/protocol/openid-connect/token
+     ```
+   
+   - **Client ID**: Enter 'ckan' or the specific client ID you have been provided.
+   
+   - **Client Secret**: Enter the client secret you obtained from Keycloak that corresponds to your client ID.
+   
+   - **Scope**: Input the scopes as `openid profile email elixir_id`.
+   
+   - **Client Authentication**: Select 'Send as Basic Auth header' from the dropdown menu.
+
+8. **Obtain Access Token**
+   - Click on the 'Get New Access Token' button to initiate the OAuth 2.0 authorization flow.
+
+After completing these steps, you should be able to receive an access token that can be used to authorize your requests within Postman, which is containing also an Elixer Id
