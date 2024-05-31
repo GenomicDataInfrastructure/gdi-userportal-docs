@@ -29,9 +29,9 @@ Note, virtual enviromnent should stay activated during the whole installation pr
 
 2. Install CKAN as a package into virtual environment: 
 ```commandline
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.1#egg=ckan[requirements]'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.4#egg=ckan[requirements]'
 # or for development purposes:
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.1#egg=ckan[requirements,dev]'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.4#egg=ckan[requirements,dev]'
 ```
 
 Installation of dependencies may fail due to some known or other compatibility issues, below is an example of troubleshooting.
@@ -43,7 +43,7 @@ rerun installation of the dependencies and install CKAN itself separately:
 ```commandline
 pip install -r <venv directory>/src/ckan/requirements.txt
 pip install -r <venv directory>/src/ckan/dev-requirements.txt
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.1#egg=ckan'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.4#egg=ckan'
 ```
 
 Another case of dependencies incompatibility occurring for CKAN v2.9.10 is `PyYAML`. 
@@ -51,16 +51,29 @@ In requirements.txt it may be set as `pyyaml==5.4.1` or `pyyaml==6.0.1`, if it c
 `TypeError: load() missing 1 required positional argument: ‘Loader'`, it should be downgraded to `pyyaml==5.3.1`.
 
 3. Install required extensions
-
-Each extension should be installed as a package as described in [README for regular installation](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-fairdatapoint/blob/SRP-156-setup-base-unit-test-for-a-ckan-extension/README.md#installation) or [development installation](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-fairdatapoint/blob/SRP-156-setup-base-unit-test-for-a-ckan-extension/README.md#developer-installation).
-Alternatively an extension can be cloned first to a desired location and then installed to the virtual environment from file, e.g.:
+An extension can be cloned first to a desired location and then installed to the virtual environment from file, e.g.:
 ```commandline
 pip install -e file:///<path to local extension repo>/ckan-fairdatapoint#egg=ckanext-fairdatapoint
 ```
+For example on mac 
+```commandline
+pip install -e file:///Users/<username>/Github/gdi-userportal-ckanext-fairdatapoint#egg=ckanext-fairdatapoint  
+```
+
+Or directly from Github location 
+```commandline
+pip3 install -e git+https://github.com/ckan/ckanext-dcat.git@v1.5.1#egg=ckanext-dcat 
+```
+
 Then install dependencies:
 ```commandline
 pip install -r <path to local extension repo>/requirements.txt
 pip install -r <path to local extension repo>/dev-requirements.txt
+```
+For example ckanext-harvest
+```commandline
+pip3 install -r https://raw.githubusercontent.com/ckan/ckanext-harvest/master/requirements.txt 
+pip3 install -r https://raw.githubusercontent.com/ckan/ckanext-harvest/master/dev-requirements.txt  
 ```
 
 4. Set up a postgres database, specify database connection string in `ckan.ini` and `test-core.ini`.
@@ -91,5 +104,12 @@ Tests can be run via simple ```pytest --ckan-ini=test.ini``` command or an exten
 The following example is to run tests with coverage:
 
 ```commandline
-pytest --ckan-ini=test.ini --disable-warnings ./ckanext/fairdatapoint --cov ./ckanext/fairdatapoint
+use = config:<path to virtual environment>/default/src/ckan/test-core.ini
+<path to virtual environment>/default/bin/pytest --ckan-ini=test.ini --disable-warnings ./ckanext/fairdatapoint --cov ./ckanext/fairdatapoint -vv
+```
+
+Per file/UT within PyCharm. Mark sure the following user environment variable is set 
+
+```commandline 
+CKAN_INI=test.ini
 ```
