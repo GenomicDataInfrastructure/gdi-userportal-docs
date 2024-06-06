@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-4.0
 -->
 ## Keycloak
 
-Keycloak can be obtained by running the CKAN deployment script that you can find in the following guide: [CKAN deployment script Azure](./../deployment/azure)
+Keycloak can be obtained by running the CKAN deployment script that you can find in the following guide: [Azure CLI Script Deployment Guide](./../deployment/azure)
 
 ## Configuring Identity Providers (IdPs)
 
