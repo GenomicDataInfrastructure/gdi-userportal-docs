@@ -38,14 +38,15 @@ The harvester id is the last part of the URL of the harvest source.
 
 ## Overview
 
-The GDI package, available from the GDI GitHub repository, includes a CRON job functionality designed to automate the harvesting of FAIR datapoints. This automation ensures continuous and efficient data collection without manual intervention. The harvesting process is initiated through the CKAN portal, which activates two key background processes responsible for the operation: `ckan_gather_consumer` and `ckan_fetch_consumer`.
+The GDI package, available from the GDI GitHub repository, includes a CRON job functionality designed to automate the harvesting of FAIR datapoints. This automation ensures continuous and efficient data collection without manual intervention. The harvesting process is initiated three background processes responsible for the operation: `run`, `gather_consumer` and `ckan_fetch_consumer`.
 
 ## Background Processes
 
-The harvesting operation relies on two main background processes:
+The harvesting operation relies on three main background processes:
 
-- **`ckan_gather_consumer`**: Manages the gathering of data sources to be harvested.
-- **`ckan_fetch_consumer`**: Responsible for fetching the data from the sources identified by the gather process.
+- **`gather_consumer`**: Manages the gathering of data sources to be harvested.
+- **`fetch_consumer`**: Responsible for fetching the data from the sources identified by the gather process.
+- **`run`**: Responsible for triggering the harvester at the end of each specified time interval (e.g., daily, weekly).
 
 These processes are crucial for the automated harvesting workflow, ensuring that data is continuously and efficiently collected and made available through the CKAN portal.
 
