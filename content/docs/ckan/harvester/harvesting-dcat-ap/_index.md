@@ -32,7 +32,7 @@ In the image below you can see example configuration for the last example file. 
 `fairdatapoint_dcat_ap` as `profile` was needed to make sure parsing works with [gdi_useportal schema](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-gdi-userportal/blob/main/ckanext/gdi_userportal/scheming/schemas/gdi_userportal.json) which 
 is different from CKAN default one.
 
-After a harvester job is configured it can be triggered by clicking `Reharvest` in the job's Admin section.
+After a harvester job is configured, it can be triggered manually by clicking Reharvest in the job's Admin section. If you select the manual time interval, you need to do this each time you want to run the job. However, if you set the Update frequency to e.g. daily, a background process will automatically trigger the harvester at the end of each day.
 To test harvesting in Docker Desktop go to the container then click Terminal. Enter the command `ckan --config=/srv/app/ckan.ini harvester run-test <id of harvester>`, the <id of harvester> is the part of the URL of the harvest source.
 
 If successful you'll see datasets uploaded in CKAN.
