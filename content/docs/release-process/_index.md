@@ -15,7 +15,7 @@ This document outlines our practices for delivering a cutting-edge application d
 
 Version numbers indicate the level of changes that are introduced by the release. This use of semantic [versioning](https://semver.org/) helps you understand the potential impact of updating to a new version.
 
-A version numbers have three parts: major.minor.patch. For example, version 1.2.0 indicates major version 1, minor version 2, and patch level 0.
+A version number has three parts: major.minor.patch. For example, version 1.2.0 indicates major version 1, minor version 2, and patch level 0.
 
 The version number is incremented based on the level of change included in the release.
 
@@ -31,7 +31,7 @@ The version number is incremented based on the level of change included in the r
 
 Once all necessary changes are merged to `main`, please follow this process:
 - Ensure `CHANGELOG.md` is up to date.
-- Push a new tag following the versioning and releases described in this page. The tag name follows `v{major}.{minor}`. Example:
+- Push a new tag following the versioning and releases described in this page. The tag name follows `v{major}.{minor}.{patch}`. Example:
 ```bash
 $ git tag -a v1.2.0 -m "GDI MS08"
 $ git push origin v1.2.0
