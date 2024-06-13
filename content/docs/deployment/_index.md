@@ -1,6 +1,6 @@
 ---
 title: Deployment
-weight: 2
+weight: 3
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
