@@ -40,7 +40,8 @@ $ git push origin v1.2.0
 ```bash
 $ git checkout -b releases/v1.2
 ```
-- Go to GitHub and create a new release, example: https://github.com/GenomicDataInfrastructure/gdi-userportal-frontend/releases
+- Go to GitHub and create a new release, example: 
+- Click on "Draft a new release" 
 - Select the just created release branch and tag.
 - Enter a title for the release that includes the version and possibly a short description.
 - Auto-generate release notes.
