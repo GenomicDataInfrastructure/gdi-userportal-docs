@@ -38,7 +38,7 @@ The harvester id is the last part of the URL of the harvest source.
 
 ## Overview
 
-The GDI package, available from the GDI GitHub repository, includes a CRON job functionality designed to automate the harvesting of FAIR datapoints. This automation ensures continuous and efficient data collection without manual intervention. The harvesting process is initiated three background processes responsible for the operation: `run`, `gather_consumer` and `ckan_fetch_consumer`.
+The GDI package, available from the GDI GitHub repository, includes a CRON job functionality designed to automate the harvesting of FAIR datapoints. This automation ensures continuous and efficient data collection without manual intervention. The harvesting process is initiated three background processes responsible for the operation: `crond`, `ckan_gather_consumer` and `ckan_fetch_consumer`.
 
 ## Background Processes
 
@@ -61,11 +61,12 @@ supervisorctl status
 Upon execution, you should see output similar to the following, indicating that both processes are running correctly:
 
 ```
-ckan_fetch_consumer              RUNNING   pid 204, uptime 4:37:47
-ckan_gather_consumer             RUNNING   pid 205, uptime 4:37:47
+ckan_fetch_consumer              RUNNING   
+ckan_gather_consumer             RUNNING   
+crond                            RUNNING
 ```
 
-This output shows that both `ckan_fetch_consumer` and `ckan_gather_consumer` are in the RUNNING state, along with their respective process IDs and uptime, confirming their active operation within the system.
+This output shows that both `ckan_fetch_consumer`, `ckan_gather_consumer` and `crond` are in the RUNNING state, along with their respective process IDs and uptime, confirming their active operation within the system.
 
 
 
