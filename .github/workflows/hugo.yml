@@ -48,7 +48,7 @@ jobs:
         with:
           submodules: recursive
       - name: REUSE Compliance Check
-        uses: fsfe/reuse-action@v2  
+        uses: fsfe/reuse-action@v4  
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
