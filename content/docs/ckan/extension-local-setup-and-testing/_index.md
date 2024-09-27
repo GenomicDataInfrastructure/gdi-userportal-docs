@@ -29,9 +29,9 @@ Note, virtual enviromnent should stay activated during the whole installation pr
 
 2. Install CKAN as a package into virtual environment: 
 ```commandline
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.4#egg=ckan[requirements]'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.5#egg=ckan[requirements]'
 # or for development purposes:
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.4#egg=ckan[requirements,dev]'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.5#egg=ckan[requirements,dev]'
 ```
 
 Installation of dependencies may fail due to some known or other compatibility issues, below is an example of troubleshooting.
@@ -43,7 +43,7 @@ rerun installation of the dependencies and install CKAN itself separately:
 ```commandline
 pip install -r <venv directory>/src/ckan/requirements.txt
 pip install -r <venv directory>/src/ckan/dev-requirements.txt
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.4#egg=ckan'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.5#egg=ckan'
 ```
 
 Another case of dependencies incompatibility occurring for CKAN v2.9.10 is `PyYAML`. 
@@ -62,7 +62,7 @@ pip install -e file:///Users/<username>/Github/gdi-userportal-ckanext-fairdatapo
 
 Or directly from Github location 
 ```commandline
-pip3 install -e git+https://github.com/ckan/ckanext-dcat.git@v1.5.1#egg=ckanext-dcat 
+pip3 install -e git+https://github.com/ckan/ckanext-dcat.git@v2.0.0#egg=ckanext-dcat 
 ```
 
 Then install dependencies:
