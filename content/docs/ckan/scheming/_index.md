@@ -156,7 +156,7 @@ GET http(s)://<ckan-host>/api/action/scheming_dataset_schema_list
 and then
 
 ```java
-GET http(s)://<ckan-host>/api/action/scheming_dataset_schema_shoe?type=<dataset_type>
+GET http(s)://<ckan-host>/api/action/scheming_dataset_schema_show?type=<dataset_type>
 ```
 
 UI search of all dataset types is configured in `ckan.search.show_all_types` parameter (see [documentation](https://docs.ckan.org/en/latest/maintaining/configuration.html#search-settings)).
