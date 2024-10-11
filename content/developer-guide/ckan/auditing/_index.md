@@ -1,5 +1,5 @@
 ---
-title: GDI User Portal Auditing
+title: User Portal Auditing
 ---
 
 <!--

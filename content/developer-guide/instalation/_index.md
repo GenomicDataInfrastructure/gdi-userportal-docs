@@ -1,6 +1,6 @@
 ---
-title: Deployment
-weight: 3
+title: Instalation
+weight: 4
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
@@ -11,7 +11,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ## Environment Variables
 
-### GDI User Portal - Frontend
+### User Portal - Frontend
 
 It is the user interface and contains all frontend components only. It is published in `ghcr.io/genomicdatainfrastructure/gdi-userportal-frontend`.
 
@@ -27,7 +27,7 @@ It requires the following environment variables:
 - `REFRESH_TOKEN_URL`: It's the url used for Oauth2 authorization flow to refresh the access token. For Elixir LU the value is: `https://id.portal.dev.gdi.lu/realms/gdi/protocol/openid-connect/token`.
 - `CSP_HEADER`: It can be used to enforce CSP restrictions, to enforce security controls.
 
-### GDI User Portal - CKAN
+### User Portal - CKAN
 
 It is the DCAT-AP metadata repository. It is responsible for defining metadata schema, harvesting and URI to label mapping. As this CKAN has an specific schema for GDI, we publish our custom docker image in `ghcr.io/genomicdatainfrastructure/gdi-userportal-ckan-docker`.
 
@@ -59,7 +59,7 @@ It requires the following environment variables:
 - `CKAN_REDIS_URL`: Redis URL used by CKAN. In User Portal it is `redis://redis:6379/1`.
 
 
-### GDI User Portal - Access Management Service
+### User Portal - Access Management Service
 
 It is the service that integrates the User Portal and REMS. We publish the docker image in `ghcr.io/genomicdatainfrastructure/gdi-userportal-access-management-service`.
 
@@ -77,7 +77,7 @@ It requires the following environment variables:
 - `QUARKUS_LOG_LEVEL`: Log Level. In User Portal it is `DEBUG`.
 
 
-### GDI User Portal - Dataset Discovery Service
+### User Portal - Dataset Discovery Service
 
 It is the service that integrates the User Portal and REMS. We publish the docker image in `ghcr.io/genomicdatainfrastructure/gdi-userportal-access-management-service`.
 
@@ -96,7 +96,7 @@ It requires the following environment variables:
 - `QUARKUS_LOG_LEVEL`: Log Level. In User Portal it is `DEBUG`.
 
 
-### GDI User Portal - REMS Synchronizer
+### User Portal - REMS Synchronizer
 
 It is a CRON job runs every 30 minutes. It creates in REMS if it does not exist default organization, workflow and form, and creates if it does not exist one catalogue item per datasets retrieve from CKAN.
 

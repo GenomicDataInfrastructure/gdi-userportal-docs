@@ -1,5 +1,5 @@
 ---
-title: REMS API
+title: REMS
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.

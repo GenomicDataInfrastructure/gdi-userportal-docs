@@ -1,5 +1,5 @@
 ---
-title: GDI User Portal CKAN Docker
+title: User Portal CKAN Docker
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
