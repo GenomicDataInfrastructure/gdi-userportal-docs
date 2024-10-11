@@ -36,6 +36,8 @@ When a schema change falls under DCAT-AP 3 or an earlier version of DCAT-AP but 
 <ckanext/dcat/schemas/dcat_ap_full.yaml>
 - Use appropriate field types (e.g., text, repeating subfield, URI).
 - Follow examples from other fields for consistency.
+For more information about scheming can be found [here](../ckan/scheming/_index.md)
+
 3. **Extend the existing mapping depending on the DCAT-AP version:**
 Modify the mapping files located in the directory:
 <ckanext/dcat/profiles>
