@@ -3,7 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 
 baseURL = "http://localhost"
-title = "GDI - User Portal Docs"
+title = "User Portal - Docs"
+
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
@@ -27,6 +28,9 @@ enableRobotsTXT = true
 
 [taxonomies]
    tag = "tags"
+
+[params]
+  geekdocCollapseAllSections = true
 
 [params.geekdocContentLicense]
   name = "CC BY 4.0 DEED"
