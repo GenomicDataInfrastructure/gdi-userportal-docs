@@ -1,8 +1,6 @@
 ---
-title: Supported Environments
-weight: 6
+title: Theming
 ---
-
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.
 

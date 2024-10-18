@@ -1,6 +1,6 @@
 ---
 title: Third-party Components
-weight: 7
+weight: 5
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.

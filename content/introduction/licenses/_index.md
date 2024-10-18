@@ -1,6 +1,6 @@
 ---
 title: Licenses
-weight: 2
+weight: 4
 ---
 
 <!--
