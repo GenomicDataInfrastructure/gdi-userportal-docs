@@ -13,7 +13,7 @@ The User Portal is open-source data portal that supports users on dataset discov
 
 ## Getting Started
 
-The Guide [Instalation](/instalation) is the quickest and easiest way to get up and running with the user portal.
+The Guide [Instalation](/developer-guide/instalation) is the quickest and easiest way to get up and running with the user portal.
 
 ## Getting Help
 
