@@ -1,8 +1,9 @@
 ---
-title: CKAN DB Structure and Fields Mapping Strategy
+title: Mapping New Metadata Fields Strategy
 ---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
+SPDX-FileContributor: PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->

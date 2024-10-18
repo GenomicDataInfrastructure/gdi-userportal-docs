@@ -1,5 +1,5 @@
 ---
-title: User Portal Auditing
+title: Auditing User Activity in CKAN
 ---
 
 <!--

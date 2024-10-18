@@ -1,5 +1,5 @@
 ---
-title: User Roles
+title: CKAN User Roles
 ---
 <!--
 SPDX-FileCopyrightText: 2024 PNED G.I.E.

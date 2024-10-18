@@ -1,9 +1,10 @@
 ---
-title: LS-AAI
-weight: 7
+title: Configure LS-AAI in Keycloak
+weight: 4
 ---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
+SPDX-FileContributor: PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->

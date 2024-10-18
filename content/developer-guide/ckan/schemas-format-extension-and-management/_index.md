@@ -3,6 +3,7 @@ title: Schemas format, extension and management
 ---
 <!--
 SPDX-FileCopyrightText: 2024 Stichting Health-RI
+SPDX-FileContributor: PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0
 -->
