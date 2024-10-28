@@ -10,13 +10,6 @@ SPDX-License-Identifier: CC-BY-4.0
 -->
 
 
-
-<!--
-SPDX-FileCopyrightText: 2024 Health-RI 
-
-SPDX-License-Identifier: CC-BY-4.0
--->
-
 ## Fair Data Point (FDP) Installation Guide
 
 This guide provides steps to install FDP and configure it with GDI-specific SHACL shapes. For a more comprehensive overview, please refer to the [existing FDP documentation on exposing metadata](https://health-ri.atlassian.net/wiki/spaces/FSD/pages/279183386/Exposing+metadata).
