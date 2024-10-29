@@ -35,7 +35,11 @@ To add GDI-specific SHACL validation, perform the following steps:
    - Open the **editor** and paste the contents of `Resource.ttl` (or other shapes).
    - **Add a description** to document the purpose or release information.
    - Ensure the **abstract** checkbox is selected when uploading `Resource.ttl`, as most other classes derive from it.
-   - For other shapes, uncheck **abstract** and make them **public** for accessibility.
+   - For other shapes, **uncheck the abstract checkbox**.
+   - Press **Save and Release** to finalize the shape.
+   - Provide a meaningful description and **version number** for the release.
+   - Check the **public** checkbox to make the shape accessible.
+   - Press **Release** to complete the upload.
 
 Repeat these steps for each SHACL shape file.
 
