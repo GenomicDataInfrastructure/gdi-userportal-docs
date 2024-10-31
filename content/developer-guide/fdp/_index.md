@@ -62,7 +62,7 @@ The following metadata fields are currently supported:
 | **publisher**       | Agent(name=[Radboud University Medical Center], identifier=https://ror.org/05wg1m734, mbox=[mailto:test@health-ri.nl])                                         |
 | **theme**           | http://publications.europa.eu/resource/authority/data-theme/HEAL                                                                                               |
 | **title**           | COVID-19 GWAS and Allele Frequency Lookup Dataset for GDI MS 8                                                                                                 |
-| **license**         | https://creativecommons.org/licenses/by-sa/4.0/                                                                                                                |
+
 | **number_of_participant** | 100                                                                                                                                                    |
 | **phenotypes**      | Age (min and max)                                                                                                                                              |
 | **accessRights**    | DUO:0000006, DUO:0000017, DUO:0000018 (General research use, Infectious Disease research use, Genomic research on complex diseases)                          |
@@ -76,7 +76,7 @@ The following metadata fields are currently supported:
 | **description**    | VCF file containing COVID-19 case/control data for GDI MS8 demonstration.                                |
 | **access_url**     | https://example.com/dataset/GDI-MS8-COVID19.vcf                                                          |
 | **media_type**     | https://www.iana.org/assignments/media-types/application/vcf                                             |
-| **identifier**     | GDIF-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}                                                                 |
+| **license**         | https://creativecommons.org/licenses/by-sa/4.0/                                                         |
 
 ### 4. Onboarding Metadata
 
