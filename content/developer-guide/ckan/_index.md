@@ -46,10 +46,12 @@ CKAN gutter community chat:
 ## Table of Contents
 
 * [Local setup and testing of an extension](./extension-local-setup-and-testing/_index.md)
-* [CKAN, [WIP] CKAN DB Structure and Fields Mapping Strategy](./mapping/_index.md)
-* [CKAN, Schemas format, extension and management](./scheming/_index.md)
+* [CKAN, [WIP] CKAN DB Structure and Fields Mapping Strategy](./mapping-new-metadata-fields-strategy/_index.md)
+* [CKAN, Schemas format, extension and management](./schemas-format-extension-and-management/_index.md)
 * [Harvester](./harvester)
-    * [Test CKAN harvesting of DCAT-AP](./harvester/test_harvester_dcat/_index.md)
+    * [Test CKAN harvesting of DCAT-AP](./harvester/harvesting-dcat-ap/_index.md)
     * [Setting up nginx with correct MIME types with CKAN](./harvester/nginx-rdf/_index.md)
-    * [User Roles](./user-roles/_index.md)
+    * [How to harvest Fairdatapoints](./harvester/harvesting-fair-data-points/_index.md)
+    * [How harvesting of Fairdatapoints works](./harvester/fair-data-point-harvester-update-strategy/_index.md)
+* [User Roles](./user-roles/_index.md)
 * [CKAN, Auditing](./auditing/_index.md)

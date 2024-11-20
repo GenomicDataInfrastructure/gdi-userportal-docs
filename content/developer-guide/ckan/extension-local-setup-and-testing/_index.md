@@ -62,7 +62,7 @@ pip install -e file:///Users/<username>/Github/gdi-userportal-ckanext-fairdatapo
 
 Or directly from Github location 
 ```commandline
-pip3 install -e git+https://github.com/ckan/ckanext-dcat.git@v2.0.0#egg=ckanext-dcat 
+pip3 install -e git+https://github.com/ckan/ckanext-dcat.git@v2.1.0#egg=ckanext-dcat 
 ```
 
 Then install dependencies:
