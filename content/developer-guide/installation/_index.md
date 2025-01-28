@@ -1,5 +1,5 @@
 ---
-title: Instalation
+title: Installation
 weight: 1
 ---
 <!--
@@ -9,105 +9,36 @@ SPDX-License-Identifier: CC-BY-4.0
 -->
 
 
-## Environment Variables
+The user portal consists of multiple components. To install or contribute to a specific component, refer to the respective installation guide linked below. All components run on Docker containers, and their individual setups are documented in their respective repositories.
 
-### User Portal - Frontend
+## User Portal Frontend
 
-It is the user interface and contains all frontend components only. It is published in `ghcr.io/genomicdatainfrastructure/gdi-userportal-frontend`.
+The User Portal Frontend, built with Next.js, provides a web interface for interacting with key services, including the Dataset Discovery Service (DDS) and the Access Management Service (AMS). It acts as the primary user interface for the GDI project.
 
-It requires the following environment variables:
-- `NEXT_PUBLIC_DDS_URL`: URL for the Dataset Discovery Service, described below. For Elixir LU the value is: `https://api.portal.dev.gdi.lu/discovery`.
-- `NEXT_PUBLIC_DAAM_URL`: URL for the Access Management Service, described below. For Elixir LU the value is: `https://api.portal.dev.gdi.lu/daam`.
-- `NEXTAUTH_URL`: URL which IAM must redirect back, after authorization is granted. It must be the same as the Portal URL. For Elixir LU the value is: `https://portal.dev.gdi.lu`.
-- `NEXTAUTH_SECRET`: It's a secret used for encryption of any information persisted in the user session. This value must be generated and stored safely.
-- `KEYCLOAK_CLIENT_ID`: Oauth2 client id. This value must be generated and stored safely.
-- `KEYCLOAK_CLIENT_SECRET`: Oauth2 client secret. This value must be generated and stored safely.
-- `KEYCLOAK_ISSUER_URL`: Oauth2 authentication server URL as per `${KEYCLOAK_HOST}/realms/{GDI_REALM}`.
-- `END_SESSION_URL` It's the url used for Oauth2 authorization flow to invalidate the user session. For Elixir LU the value is: `https://id.portal.dev.gdi.lu/realms/gdi/protocol/openid-connect/logout`.
-- `REFRESH_TOKEN_URL`: It's the url used for Oauth2 authorization flow to refresh the access token. For Elixir LU the value is: `https://id.portal.dev.gdi.lu/realms/gdi/protocol/openid-connect/token`.
-- `CSP_HEADER`: It can be used to enforce CSP restrictions, to enforce security controls.
+Installation guide: [User Portal Frontend README](https://github.com/GenomicDataInfrastructure/gdi-userportal-frontend?tab=readme-ov-file#gdi-user-portal-front-end)
 
-### User Portal - CKAN
+## Dataset Discovery Service (DDS)
 
-It is the DCAT-AP metadata repository. It is responsible for defining metadata schema, harvesting and URI to label mapping. As this CKAN has an specific schema for GDI, we publish our custom docker image in `ghcr.io/genomicdatainfrastructure/gdi-userportal-ckan-docker`.
+The Dataset Discovery Service acts as a backend layer mediating requests from the frontend to CKAN’s data catalog APIs. It retrieves, processes, and maps dataset information while abstracting CKAN-specific logic. To use DDS, ensure that the GDI CKAN extension is installed in your CKAN instance.
 
-It requires the following environment variables:
-- `CKAN___BEAKER__SESSION__SECRET`: CKAN session secret to encrypt session data.
-- `CKAN___API_TOKEN__JWT__ENCODE__SECRET`: CKAN JWT econding secret.
-- `CKAN___API_TOKEN__JWT__DECODE__SECRET`: CKAN JWT decoding secret.
-- `CKAN_SYSADMIN_NAME`: The sysadmin username.
-- `CKAN_SYSADMIN_PASSWORD`: The sysadmin password. This password is ignored if Keycloak authentication is in place.
-- `CKAN_SYSADMIN_EMAIL`: The sysadmin email.
-- `CKAN__AUTH__USER_CREATE_ORGANIZATIONS`: Flag that adds to new users `Create Organizations` permission. In GDI this is `false`.
-- `CKAN_SQLALCHEMY_URL`: Databse URL in the following as per `postgresql://${CKAN_DB_USER}:${CKAN_DB_PASSWORD}@${POSTGRES_HOST}/${CKAN_DB}`.
-- `CKANEXT__OIDC_PKCE__BASE_URL`: Authentication base URL as per `${KEYCLOAK_HOST}/realms/{GDI_REALM}/protocol/openid-connect`:
-- `CKANEXT__OIDC_PKCE__CLIENT_ID`: Oauth2 client id. This value must be generated and stored safely.
-- `CKANEXT__OIDC_PKCE__CLIENT_SECRET`: Oauth2 client secret. This value must be generated and stored safely.
-- `CKANEXT__OIDC_PKCE__AUTH_PATH`: Oauth2 auth endpoint path. In Keycloak it is `/auth`.
-- `CKANEXT__OIDC_PKCE__TOKEN_PATH`: Oauth2 token endpoint path. In Keycloak it is `/token`:
-- `CKANEXT__OIDC_PKCE__USERINFO_PATH`: Oauth2 userinfo endpoint path. In Keycloak it is `/userinfo`:
-- `CKANEXT__OIDC_PKCE__ERROR_REDIRECT`: CKAN URL to redirect in case of error. In User Portal it is `/user/register`.
-- `CKANEXT__OIDC_PKCE__SCOPE`: Oauth2 scopes. In User Portal it is `email openid profile`.
-- `CKANEXT__OIDC_PKCE__USE_SAME_ID`: Flag that tells ckanext-oidc-pkce plugin to use IAM id as internal CKAN id. In User Portal it is `true`.
-- `CKANEXT__OIDC_PKCE__MUNGE_PASSWORD`: Flag that tells ckanext-oidc-pkce plugin if the passport must be mungled in CKAN's database. In User Portal it is `true`.
-- `CKAN__ROUTE_AFTER_LOGIN`: Route after a sucessfull login. In User Portal it is `home`.
-- `CKAN__HARVEST__MQ__TYPE`: Type of Message Queue used by ckanext-harvest. In User Portal it is `redis`.
-- `CKAN__HARVEST__MQ__HOSTNAME`: hostname of Message Queue Broker used by ckanext-harvest. In User Portal it is `redis`.
-- `CKAN__HARVEST__MQ__PORT`: port of Message Queue Broker used by ckanext-harvest. In User Portal it is `6379`.
-- `CKAN__HARVEST__MQ__REDIS_DB`: database of Message Queue Broker used by ckanext-harvest. In User Portal it is `1`.
-- `CKAN_SOLR_URL`: SOLR URL used by CKAN. In User Portal it is `http://solr:8983/solr/ckan`.
-- `CKAN_REDIS_URL`: Redis URL used by CKAN. In User Portal it is `redis://redis:6379/1`.
+Installation guide: [Dataset Discovery Service README](https://github.com/GenomicDataInfrastructure/gdi-userportal-dataset-discovery-service?tab=readme-ov-file#gdi-user-portal---dataset-discovery-service)
 
+## Access Management Service (AMS)
 
-### User Portal - Access Management Service
+The Access Management Service ensures secure interactions between the frontend and backend data authorities. It provides APIs for managing user access requests and integrates with external APIs like REMS to enforce policies and track user actions.
 
-It is the service that integrates the User Portal and REMS. We publish the docker image in `ghcr.io/genomicdatainfrastructure/gdi-userportal-access-management-service`.
+Installation guide: [Access Management Service README](https://github.com/GenomicDataInfrastructure/gdi-userportal-access-management-service?tab=readme-ov-file#gdi-user-portal---access-management-service)
 
-It requires the following environment variables:
-- `QUARKUS_OIDC_AUTH_SERVER_URL`: Oauth2 authentication server URL as per `${KEYCLOAK_HOST}/realms/{GDI_REALM}`.
-- `QUARKUS_OIDC_CLIENT_ID`: Oauth2 client id. This value must be generated and stored safely.
-- `QUARKUS_OIDC_CREDENTIALS_SECRET`: Oauth2 client secret. This value must be generated and stored safely.
-- `QUARKUS_HTTP_CORS`: Flag that enables CORS.
-- `QUARKUS_HTTP_CORS_ORIGINS`: List of trusted origin URLs, separed by comma.
-- `QUARKUS_HTTP_CORS_HEADERS`: List of accepted headers, separed by comma. In User Portal it is `accept, authorization, content-type, x-requested-with`.
-- `QUARKUS_HTTP_CORS_METHODS`: List of accepted methods, separed by comma. In User Portal it is `POST, OPTIONS, GET`.
-- `QUARKUS_REST_CLIENT_REMS_YAML_API_KEY`: REMS apikey.
-- `QUARKUS_REST_CLIENT_REMS_YAML_BOT_USER`: REMS bot user id.
-- `QUARKUS_REST_CLIENT_REMS_YAML_URL`: REMS base URL.
-- `QUARKUS_LOG_LEVEL`: Log Level. In User Portal it is `DEBUG`.
+## CKAN Extensions
 
+CKAN is an open-source data management system for publishing, sharing, and discovering datasets. It enables cataloging, searching, and accessing data through a web interface and API. Custom extensions can be developed to extend CKAN’s core functionalities. The User Portal uses several extensions, including one specifically developed for this project.
 
-### User Portal - Dataset Discovery Service
+Extensions used include (but are not limited to):
 
-It is the service that integrates the User Portal and REMS. We publish the docker image in `ghcr.io/genomicdatainfrastructure/gdi-userportal-access-management-service`.
+- [GDI Userportal Ckanext](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-gdi-userportal): Adds a DCAT-AP 3 compatible schema with fields such as `issued`, `modified`, `has\_version`, and `temporal_start`. It also provides enhanced parsing for creators in the DCAT profile, adds support for OpenID Connect with PKCE, introduces new fields to `scheming_package_show`, and links CKAN harvest views for admin users. Additionally, it offers endpoints for listing unique values and simplifies integration with CKAN-based datasets for the User Portal.
 
-It requires the following environment variables:
-- `QUARKUS_OIDC_AUTH_SERVER_URL`: Oauth2 authentication server URL as per `${KEYCLOAK_HOST}/realms/{GDI_REALM}`.
-- `QUARKUS_OIDC_CLIENT_ID`: Oauth2 client id. This value must be generated and stored safely.
-- `QUARKUS_OIDC_CREDENTIALS_SECRET`: Oauth2 client secret. This value must be generated and stored safely.
-- `QUARKUS_HTTP_CORS`: Flag that enables CORS.
-- `QUARKUS_HTTP_CORS_ORIGINS`: List of trusted origin URLs, separed by comma.
-- `QUARKUS_HTTP_CORS_HEADERS`: List of accepted headers, separed by comma. In User Portal it is `accept, authorization, content-type, x-requested-with`.
-- `QUARKUS_HTTP_CORS_METHODS`: List of accepted methods, separed by comma. In User Portal it is `POST, OPTIONS, GET`.
-- `QUARKUS_REST_CLIENT_CKAN_YAML_URL`: CKAN URL.
-- `QUARKUS_REST_CLIENT_BEACON_YAML_URL`: Beacon URL.
-- `QUARKUS_REST_CLIENT_KEYCLOAK_YAML_URL`: Keycloak URL.
-- `QUARKUS_REST_CLIENT_KEYCLOAK_YAML_BEACON_IDP_ALIAS`: Beacon expected IDP Alias. In User Portal it is `LSAAI`.
-- `QUARKUS_LOG_LEVEL`: Log Level. In User Portal it is `DEBUG`.
+- [Fair Datapoint Ckanext](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-fairdatapoint): Provides features related to FAIR principles to enhance dataset accessibility and interoperability.
 
+- [Harvest Ckanext](https://github.com/GenomicDataInfrastructure/gdi-userportal-ckanext-harvest): Supports automated data harvesting and integration with external data sources.
 
-### User Portal - REMS Synchronizer
-
-It is a CRON job runs every 30 minutes. It creates in REMS if it does not exist default organization, workflow and form, and creates if it does not exist one catalogue item per datasets retrieve from CKAN.
-
-It requires the following environment variables:
-- `REMS_URL`: REMS URL.
-- `CKAN_URL`: CKAN URL.
-- `REMS_API_KEY`: REMS apikey.
-- `REMS_BOT_USER`: REMS bot user id.
-
-## Existing deployments
-
-{{< toc-tree >}} 
-
-
+In order to contribute on a ckan extension and run it on you local machine, it must be integrated into the docker build that will run as your backend service, connected to your DDS instance. For a detailed guide on how to integrate the extention, read [5. installing new extensions](https\://github.com/GenomicDataInfrastructure/gdi-userportal-ckan-docker?tab=readme-ov-file#5-installing-new-extensions) from the [CKAN Docker repository](https\://github.com/GenomicDataInfrastructure/gdi-userportal-ckan-docker)
