@@ -12,23 +12,6 @@ SPDX-License-Identifier: CC-BY-4.0
 
 The GDI User Portal offers extensive customization options through environment variables and public assets. This guide will help you understand how to customize various aspects of the portal.
 
-## Environment Variables
-
-The following environment variables can be used to configure the portal:
-
-| Variable Name                | Explanation                                              | Additional Notes                                                 |
-| ---------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------- |
-| NEXT_PUBLIC_DDS_URL          | URL for the Data Discovery Service API                   | Ensure this points to the correct environment (dev/staging/prod) |
-| NEXT_PUBLIC_DAAM_URL         | URL for the Data Access and Authorization Management API | Ensure this points to the correct environment (dev/staging/prod) |
-| NEXTAUTH_URL                 | The base URL of your application                         | Important for authentication callbacks                           |
-| NEXTAUTH_SECRET              | Secret used to encrypt JWT tokens                        | Should be a long, random string. Rotate regularly for security   |
-| KEYCLOAK_CLIENT_ID           | Client ID for Keycloak authentication                    | Obtained from your Keycloak admin console                        |
-| KEYCLOAK_CLIENT_SECRET       | Client secret for Keycloak authentication                | Obtained from your Keycloak admin console. Keep this secret!     |
-| KEYCLOAK_ISSUER_URL          | URL of the Keycloak realm                                | Ensure this points to the correct realm                          |
-| END_SESSION_URL              | URL for ending the user's session                        | Used for logout functionality                                    |
-| REFRESH_TOKEN_URL            | URL for refreshing authentication tokens                 | Ensures long-lived sessions                                      |
-| CSP_HEADER                   | Content Security Policy header                           | Defines allowed sources for various resource types               |
-
 ## Public Assets Customization
 
 The portal's appearance can be customized through various files in the `/public` directory:
