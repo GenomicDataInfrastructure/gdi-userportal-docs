@@ -38,6 +38,8 @@ To log in or register for access, follow these steps:
 
 The **Dataset Discovery** feature on the GDI Portal helps you quickly find genomic datasets tailored to your research needs. Here's how you can discover datasets using the portal's search functionality.
 
+![Alt Text](./giffs/searching.gif)
+
 ### 2.1 Using the Search Bar
 
 On the **GDI Portal Homepage**, you will find a prominent search bar. This is the starting point for searching datasets. You can enter any relevant search term, such as:
@@ -64,6 +66,8 @@ As you select different filter options, the results will update automatically to
 If you are **logged in**, you will have access to additional filters that can further refine your search, providing more precise dataset discovery options. Additionally, some datasets are only available to authenticated users, meaning logging in may reveal more datasets that were previously hidden when browsing anonymously.
 
 ### 2.3 Viewing Dataset Details
+
+![Alt Text](./giffs/details.gif)
 
 Once you've found a dataset of interest, click on the dataset's title to view detailed information. This page will typically include:
 
@@ -108,6 +112,8 @@ The **Request Access** functionality in the GDI Portal allows users to formally 
 
 ### 3.1 Adding Datasets to the Basket
 
+![Alt Text](./giffs/basket.gif)
+
 Once you've identified datasets that are relevant to your research or project, you can add them to your **Basket**. The Basket acts as a holding area where you can gather and organize datasets before proceeding with the access request process. This feature is particularly helpful if you're considering multiple datasets and would like to submit a single application for all of them, saving you time and effort.
 
 You can add any number of datasets to the Basket, and once you're ready, you can proceed with creating your application to request access to these datasets.
@@ -145,6 +151,8 @@ Once your application is in **Draft** status, you will need to fill out all nece
 Remember, specific instructions and required fields will be presented on the application details page, so be sure to follow them closely to ensure your application is complete.
 
 ### 3.5 Collaborating on an Application
+
+![Alt Text](./giffs/invite.gif)
 
 The GDI Portal provides the ability to collaborate with other users on an application. Once you've created your application, you can invite others to join and contribute by adding them as participants. To do so, simply click on the **Add Participant** button on the application details page.
 
