@@ -30,7 +30,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-user-people.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                     <h3>
-                      <Link to="/category/user-guide">
+                      <Link to="/docs/intro">
                         GDI Portal users
                       </Link>
                     </h3>
@@ -42,7 +42,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-system-admin-server.svg" alt="System Admin icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                       <h3>
-                      <Link to="/category/system-admin-guide">
+                      <Link to="/docs/intro">
                        Data Access Committee members
                       </Link>
                     </h3>
@@ -56,7 +56,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-developer-puzzle.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                       <h3>
-                      <Link to="/category/developer-guide">
+                      <Link to="/docs/intro">
                         Catalogue Managers
                       </Link>
                     </h3>
@@ -68,7 +68,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-developer-puzzle.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                       <h3>
-                      <Link to="/category/developer-guide">
+                      <Link to="/docs/intro">
                         System Administrators
                       </Link>
                     </h3>
@@ -80,7 +80,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-developer-puzzle.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                       <h3>
-                      <Link to="/category/developer-guide">
+                      <Link to="/docs/intro">
                         Developers
                       </Link>
                     </h3>
