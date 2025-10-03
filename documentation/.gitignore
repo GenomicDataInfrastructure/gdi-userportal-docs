@@ -1,11 +1,14 @@
 # Dependencies
 /node_modules
+apps/*/node_modules
 
 # Production
 /build
+apps/*/build
 
 # Generated files
 .docusaurus
+apps/*/.docusaurus
 .cache-loader
 
 # Misc
@@ -18,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
