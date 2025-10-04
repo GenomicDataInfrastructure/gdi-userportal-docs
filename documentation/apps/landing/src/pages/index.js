@@ -12,7 +12,7 @@ export default function Home() {
       <header className={styles.heroBanner}>
         <div className="container">
           <h1 className="hero__title">Welcome to GDI Documentation</h1>
-          <p className="hero__subtitle">Your central hub for all Genomic Data Infrastructure guides and documentation</p>
+          <p className="hero__subtitle">Your central hub for all Genomic Data Infrastructure guides</p>
         </div>
       </header>
       <main className={styles.mainPaddingBottom}>
@@ -25,8 +25,8 @@ export default function Home() {
                   <img src="img/im-a-user-people.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
                     <Link to="http://localhost:3001">
-                      GDI Portal Users
-                    </Link>
+                      GDI Data Requesters
+                    </Link> 
                   </h3>
                   <p className={styles.homeSubtext}>I want to request genomic datasets for my research, analysis, and other projects.</p>
                 </div>

@@ -31,7 +31,7 @@ export default function Home() {
                   <img src="img/im-a-user-people.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                     <h3>
                       <Link to="/docs/intro">
-                        GDI Portal users
+                        GDI Data Users
                       </Link>
                     </h3>
                     <p className={styles.homeSubtext}>I want to request genomic datasets for my research, analysis, and other projects.</p>
@@ -43,7 +43,7 @@ export default function Home() {
                   <img src="img/im-a-system-admin-server.svg" alt="System Admin icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                       <h3>
                       <Link to="/docs/intro">
-                       Data Access Committee members
+                       Data Access Committee
                       </Link>
                     </h3>
                     <p className={styles.homeSubtext}>I want to access DAAMs to review and approve datasets.</p>
