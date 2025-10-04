@@ -8,7 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: #4A1C40; /* Updated to new purple color */
+  background: #7B2D7E; /* Primary brand purple from logo */
   color: #fff;         /* White text for contrast */
 }
 
@@ -19,7 +19,7 @@
 
 /* Docusaurus button override for hero banner */
 .heroBanner .button--primary {
-  background: #e51f26;   /* Accent red */
+  background: #F5A623;   /* Brand orange accent from logo */
   color: #fff;
   border: none;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -27,22 +27,22 @@
 }
 .heroBanner .button--primary:hover,
 .heroBanner .button--primary:focus {
-  background: #b81a1f;   /* Slightly darker red on hover */
+  background: #E6951F;   /* Slightly darker orange on hover */
   color: #fff;
 }
 
 /* Dark theme overrides */
 html[data-theme='dark'] .heroBanner {
-  background: #3581B8; /* Deeper blue for dark mode */
+  background: #4A90B8; /* Secondary brand blue for dark mode */
   color: #fff;
 }
 html[data-theme='dark'] .heroBanner .button--primary {
-  background: #e51f26;
+  background: #F5A623; /* Brand orange accent */
   color: #fff !important; /* Force white text in dark mode */
 }
 
 .heroContent {
-  background: #4A1C40;
+  background: #7B2D7E; /* Primary brand purple from logo */
   color: #fff;
   border-radius: 12px;
   padding: 2rem 2.5rem;
@@ -143,5 +143,61 @@ img[src$=".svg"] {
 
 .mainPaddingBottom {
   padding-bottom: 8rem; /* Space between body text and footer */
+}
+
+/* Brand link colors */
+a {
+  color: #7B2D7E; /* Primary brand purple for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4A90B8; /* Secondary brand blue on hover */
+  text-decoration: underline;
+}
+
+a:focus,
+a:active {
+  color: #F5A623; /* Brand orange when highlighted/active */
+  text-decoration: underline;
+}
+
+/* Card link styling */
+.homeCard h3 a {
+  color: #7B2D7E !important; /* Primary brand purple for card links */
+  text-decoration: none;
+}
+
+.homeCard h3 a:hover {
+  color: #F5A623 !important; /* Brand orange on hover */
+  text-decoration: underline;
+}
+
+.homeCard h3 a:focus,
+.homeCard h3 a:active {
+  color: #F5A623 !important; /* Brand orange when highlighted/active */
+  text-decoration: underline;
+}
+
+/* Dark theme overrides for hero content and links */
+html[data-theme='dark'] .heroContent {
+  background: #4A90B8; /* Secondary brand blue for dark mode */
+  color: #fff;
+}
+
+html[data-theme='dark'] a {
+  color: #F5A623; /* Brand orange for links in dark mode */
+}
+
+html[data-theme='dark'] a:hover {
+  color: #E6951F; /* Darker orange on hover in dark mode */
+}
+
+html[data-theme='dark'] .homeCard h3 a {
+  color: #F5A623; /* Brand orange for card links in dark mode */
+}
+
+html[data-theme='dark'] .homeCard h3 a:hover {
+  color: #E6951F; /* Darker orange on hover in dark mode */
 }
 
