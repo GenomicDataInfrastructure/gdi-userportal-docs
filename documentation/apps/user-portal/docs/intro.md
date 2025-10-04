@@ -1,9 +1,12 @@
 ---
 slug: /intro
-sidebar_label: "User Portal Guide"
+sidebar_label: "Welcome to GDI"
 sidebar_position: 1
 ---
 
-# GDI User Portal Guide
+# Welcome to GDI 
 
-Welcome to the comprehensive guide for GDI Portal users. This documentation will help you navigate and use the portal effectively for requesting genomic datasets for your research, analysis, and other projects.
+Welcome to GDI Portal Documentation.
+
+The User Portal is open-source data portal that supports users on dataset discovery and access request. This documentation introduces key concepts in the user portal, provides installation procedures as well as comprehensive reference sections.
+

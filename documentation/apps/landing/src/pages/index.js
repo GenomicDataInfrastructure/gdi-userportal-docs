@@ -25,7 +25,7 @@ export default function Home() {
                   <img src="img/im-a-user-people.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
                     <a href="http://localhost:3001/intro" target="_blank" rel="noopener noreferrer">
-                      GDI Data Requesters
+                      Data Requesters
                     </a> 
                   </h3>
                   <p className={styles.homeSubtext}>I want to request genomic datasets for my research, analysis, and other projects.</p>
@@ -34,11 +34,11 @@ export default function Home() {
               
               <div className="col col--4">
                 <div className={styles.homeCard}>
-                  <img src="img/im-a-developer-puzzle.svg" alt="CMS icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
+                  <img src="img/im-a-user-people.svg" alt="CMS icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3002/intro" target="_blank" rel="noopener noreferrer">
+                    {/* <Link to="http://localhost:3002/docs/intro" target="_blank" rel="noopener noreferrer"> */}
                       Catalogue Managers
-                    </Link>
+                    {/* </Link> */}
                   </h3>
                   <p className={styles.homeSubtext}>I want to manage data applications and catalogue entries.</p>
                 </div>
@@ -46,11 +46,11 @@ export default function Home() {
 
               <div className="col col--4">
                 <div className={styles.homeCard}>
-                  <img src="img/im-a-system-admin-server.svg" alt="DAAMS icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
+                  <img src="img/im-a-user-people.svg" alt="DAAMS icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3003/intro" target="_blank" rel="noopener noreferrer">
+                    {/* <Link to="http://localhost:3003/intro" target="_blank" rel="noopener noreferrer"> */}
                       Data Access Committee
-                    </Link>
+                    {/* </Link> */}
                   </h3>
                   <p className={styles.homeSubtext}>I want to access DAAMs to review and approve datasets.</p>
                 </div>
@@ -60,9 +60,9 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-system-admin-server.svg" alt="System Admin icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3004/intro" target="_blank" rel="noopener noreferrer">
+                    {/* <Link to="http://localhost:3004/intro" target="_blank" rel="noopener noreferrer"> */}
                       System Administrators
-                    </Link>
+                    {/* </Link> */}
                   </h3>
                   <p className={styles.homeSubtext}>I want to deploy the GDI application in my organization.</p>
                 </div>
@@ -72,9 +72,9 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-developer-puzzle.svg" alt="Developer icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3005/intro" target="_blank" rel="noopener noreferrer">
+                    {/* <Link to="http://localhost:3005/intro" target="_blank" rel="noopener noreferrer"> */}
                       Developers
-                    </Link>
+                    {/* </Link> */}
                   </h3>
                   <p className={styles.homeSubtext}>I want to develop and customise GDI features for my organization.</p>
                 </div>
