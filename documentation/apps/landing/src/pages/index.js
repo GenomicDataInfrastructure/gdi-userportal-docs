@@ -24,9 +24,9 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-user-people.svg" alt="User icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3001">
+                    <a href="http://localhost:3001/intro" target="_blank" rel="noopener noreferrer">
                       GDI Data Requesters
-                    </Link> 
+                    </a> 
                   </h3>
                   <p className={styles.homeSubtext}>I want to request genomic datasets for my research, analysis, and other projects.</p>
                 </div>
@@ -36,7 +36,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-developer-puzzle.svg" alt="CMS icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3002">
+                    <Link to="http://localhost:3002/intro" target="_blank" rel="noopener noreferrer">
                       Catalogue Managers
                     </Link>
                   </h3>
@@ -48,7 +48,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-system-admin-server.svg" alt="DAAMS icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3003">
+                    <Link to="http://localhost:3003/intro" target="_blank" rel="noopener noreferrer">
                       Data Access Committee
                     </Link>
                   </h3>
@@ -60,7 +60,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-system-admin-server.svg" alt="System Admin icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3004">
+                    <Link to="http://localhost:3004/intro" target="_blank" rel="noopener noreferrer">
                       System Administrators
                     </Link>
                   </h3>
@@ -72,7 +72,7 @@ export default function Home() {
                 <div className={styles.homeCard}>
                   <img src="img/im-a-developer-puzzle.svg" alt="Developer icon" style={{ width: 100, height: 100, marginBottom: 12 }} />
                   <h3>
-                    <Link to="http://localhost:3005">
+                    <Link to="http://localhost:3005/intro" target="_blank" rel="noopener noreferrer">
                       Developers
                     </Link>
                   </h3>
