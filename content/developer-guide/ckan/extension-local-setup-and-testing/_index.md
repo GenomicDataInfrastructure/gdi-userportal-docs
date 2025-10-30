@@ -29,9 +29,9 @@ Note, virtual enviromnent should stay activated during the whole installation pr
 
 2. Install CKAN as a package into virtual environment: 
 ```commandline
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.5#egg=ckan[requirements]'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.11.3#egg=ckan[requirements]'
 # or for development purposes:
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.5#egg=ckan[requirements,dev]'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.11.3#egg=ckan[requirements,dev]'
 ```
 
 Installation of dependencies may fail due to some known or other compatibility issues, below is an example of troubleshooting.
@@ -43,12 +43,8 @@ rerun installation of the dependencies and install CKAN itself separately:
 ```commandline
 pip install -r <venv directory>/src/ckan/requirements.txt
 pip install -r <venv directory>/src/ckan/dev-requirements.txt
-pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.10.5#egg=ckan'
+pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.11.3#egg=ckan'
 ```
-
-Another case of dependencies incompatibility occurring for CKAN v2.9.10 is `PyYAML`. 
-In requirements.txt it may be set as `pyyaml==5.4.1` or `pyyaml==6.0.1`, if it causes the following error in the runtime
-`TypeError: load() missing 1 required positional argument: ‘Loader'`, it should be downgraded to `pyyaml==5.3.1`.
 
 3. Install required extensions
 An extension can be cloned first to a desired location and then installed to the virtual environment from file, e.g.:
@@ -93,8 +89,8 @@ To set up testing of a plugin make sure the following settings are configured co
 [app:main]
 use = config:/etc/ckan/default/src/ckan/test-core.ini
 ```
-3. Modify `test-core.ini` so configuration is correct. Most likely you need to modify `sqlalchemy.url` parameter so it contains
-correct connection information:
+3. Modify `test.ini` so configuration is correct. Most likely you need to add `sqlalchemy.url` parameter so it contains
+correct connection information(bellow [app:main] section):
 ```sqlalchemy.url = postgresql://<user>:<password>@localhost/<db_name>```
 If testing of your plugin requires writing to the database it is recommended to set up a separate test instance of postgres database.
 
@@ -113,3 +109,7 @@ Per file/UT within PyCharm. Mark sure the following user environment variable is
 ```commandline 
 CKAN_INI=test.ini
 ```
+
+### Validating Harvesters Against Environment Data
+
+For end-to-end validation that uses an environment database and Solr instance, follow the steps in [CKAN: Reset datasets & run harvester](/developer-guide/ckan/reset-datasets-run-harvester/). This workflow covers destructive cleanup of non-harvest data, matching the deployed CKAN version locally, running `harvester run-test` for every source, and rebuilding the Solr index.
