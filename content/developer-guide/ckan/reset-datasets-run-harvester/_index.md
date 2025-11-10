@@ -1,5 +1,4 @@
----
-title: CKAN: Reset datasets & run harvester
+title: "CKAN: Reset datasets & run harvester"
 ---
 
 <!--
